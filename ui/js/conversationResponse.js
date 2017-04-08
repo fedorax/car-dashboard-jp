@@ -35,6 +35,9 @@ var ConversationResponse = (function () {
     if(action.cmd === 'music_on') {
       Panel.playMusic(action.arg);
       start_music(action.arg);
+         setTimeout( function() {
+             stop_music();
+         }, 30000 );
     } else if(action.cmd === 'wipers_on') {// turn on commands
       Animations.wipersOn('lo');
     } else if(action.cmd === 'lights_on') {
@@ -83,7 +86,8 @@ var ConversationResponse = (function () {
     } else if(action.cmd === 'gas') {// amenity
       Panel.mapGas();
     } else if(action.cmd === 'restaurant') {
-      Panel.mapFoodCuisine();
+//      Panel.mapFoodCuisine();
+      Panel.mapFoodNumbers();
     } else if(action.cmd === 'restroom') {
       Panel.mapRestrooms();
     }
