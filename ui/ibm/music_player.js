@@ -3,19 +3,19 @@ var audioObj = new Audio();
 function start_music(type){
     var url = "audio/jazz.wav";
     if ( type == "ジャズ" ) {
-       url = "audio/jazz.wav";
+       url = "audio/Take_Five.wav";
     }
     if ( type == "ロック" ) {
-       url = "audio/rock.wav";
+       url = "audio/Hotel_California.wav";
     }
     if ( type == "クラシック" ) {
-       url = "audio/classic.wav";
+       url = "audio/Morzart.wav";
     }
     if ( type == "ポップス" ) {
-       url = "audio/pops.wav";
+       url = "audio/Dragon_Night.wav";
     }
     if ( type == "演歌" ) {
-       url = "audio/enka.wav";
+       url = "audio/kawanonagare.wav";
     }
     audioObj.pause();
     audioObj = new Audio(url);
