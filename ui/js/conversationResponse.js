@@ -60,6 +60,7 @@ var ConversationResponse = (function () {
       Panel.setWatsonPanelToDefault();
     } else if(action.cmd === 'music_up') {//turn up commands
       Panel.playMusic('general');
+      start_music(action.arg);
     } else if(action.cmd === 'wipers_up') {
       Animations.wipersOn('hi');
     }  else if(action.cmd === 'AC_up') {
@@ -70,6 +71,7 @@ var ConversationResponse = (function () {
       Panel.ac('hi');
     } else if(action.cmd === 'music_down') {//turn down commands
       Panel.playMusic('general');
+      stop_music();
     } else if(action.cmd === 'wipers_down') {
       Animations.wipersOn('lo');
     }  else if(action.cmd === 'AC_down') {

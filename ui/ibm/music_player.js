@@ -1,18 +1,21 @@
 var audioObj = new Audio();
 
 function start_music(type){
-    var url = "audio/Take_Five.wav";
+    var url = "audio/jazz.wav";
     if ( type == "ジャズ" ) {
-       url = "audio/Take_Five.wav";
+       url = "audio/jazz.wav";
     }
     if ( type == "ロック" ) {
-       url = "audio/Hotel_California.wav";
+       url = "audio/rock.wav";
     }
     if ( type == "クラシック" ) {
-       url = "audio/Morzart.wav";
+       url = "audio/classic.wav";
     }
     if ( type == "ポップス" ) {
-       url = "audio/Dragon_Night.wav";
+       url = "audio/pops.wav";
+    }
+    if ( type == "演歌" ) {
+       url = "audio/enka.wav";
     }
     audioObj.pause();
     audioObj = new Audio(url);
