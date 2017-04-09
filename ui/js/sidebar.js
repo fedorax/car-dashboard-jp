@@ -28,13 +28,13 @@ var Sidebar = (function() {
   };
 
   var suggestions = [
-    'Turn on the headlights',
-    'Shut off my lights',
-    'Play some music',
-    'What’s my ETA?',
-    'Show me what’s nearby',
-    'Find a gas station',
-    'Turn my radio up'
+    '音楽をかけて',
+    'ライトをつけて',
+    'ライトを消して',
+    'レストランを探して',
+    'ワイパーをつけて',
+    'エアコンをつけて',
+    'ヒーターをつけて'
   ];
 
 

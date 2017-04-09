@@ -40,8 +40,6 @@ var TooltipDialogs = (function() {
     // id attribute for the dialog box
     dialogId: 'welcome-tooltip-dialog',
     // text of the dialog box
-//    text: 'Hi! I’m Watson. This is a sample application to see how I work. \n\n'
-//      + ' For this app, imagine you’re driving and I’m your co-pilot, here to help however I can.',
     text: 'こんにちは。私はワトソンです。これは私がどんなことができるか見せるためのサンプルです。\n\n'
       + ' このサンプルで、あなたは運転中で私があなたのナビゲーターだと想像してください。',
     // id of an element to display while this dialog box is active
@@ -52,7 +50,6 @@ var TooltipDialogs = (function() {
     showId: 'input-wrapper'
   }, {
     dialogId: 'menu-here-tooltip-dialog',
-//    text: 'And if you don’t know what to ask, click here to see what I am trained to understand.',
     text: '何を質問していいかわからない場合は、ここをクリックして私がトレーニングで学んだことを確認してください。',
     showId: 'help'
   }];

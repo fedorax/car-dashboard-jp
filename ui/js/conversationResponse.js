@@ -86,8 +86,12 @@ var ConversationResponse = (function () {
     } else if(action.cmd === 'gas') {// amenity
       Panel.mapGas();
     } else if(action.cmd === 'restaurant') {
-//      Panel.mapFoodCuisine();
+      Panel.mapFoodCuisine();
+    } else if(action.cmd === 'map_number') {
       Panel.mapFoodNumbers();
+      Panel.mapNavigation("1st");
+    } else if(action.cmd === 'navigate') {
+      Panel.mapNavigation(action.arg);
     } else if(action.cmd === 'restroom') {
       Panel.mapRestrooms();
     }
