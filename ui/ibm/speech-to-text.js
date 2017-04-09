@@ -44,7 +44,7 @@ var STTModule = (function() {
   function micON() { // When the microphone button is clicked
     if (recording === false) {
       if (records === 0) { // The first time the mic is clicked - inform user
-        Api.setWatsonPayload({output: {text: ['マイク利用を求めるプロンプトに「はい」で答えて下さい。'], ref: 'STT'}}); // Dialog box output to let the user know we're recording
+        Api.setWatsonPayload({output: {text: ['マイク利用を求めるプロンプトに答えて下さい。'], ref: 'STT'}}); // Dialog box output to let the user know we're recording
         records++;
       } else {
         Api.setWatsonPayload({output: {ref: 'STT'}}); // Let the user record right away
@@ -73,7 +73,8 @@ var STTModule = (function() {
           outputElement: '#user-input',       // CSS selector or DOM Element
           inactivity_timeout: 5,              // Number of seconds to wait before closing input stream
           format: false,                      // Inhibits errors
-          model: "ja-JP_BroadbandModel",
+          model: "ja-JP_NarrowbandModel",
+          customization_id: "d309e9e0-1cda-11e7-83ec-b54f4666d1f5",
           keepMicrophone: true                // Avoids repeated permissions prompts in FireFox
         });
 
