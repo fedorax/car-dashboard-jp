@@ -261,6 +261,29 @@
       "description": null
     },
     {
+      "intent": "hungry",
+      "created": "2017-04-20T08:22:39.744Z",
+      "updated": "2017-04-20T13:20:33.230Z",
+      "examples": [
+        {
+          "text": "何か食べたい",
+          "created": "2017-04-20T13:20:33.230Z",
+          "updated": "2017-04-20T13:20:33.230Z"
+        },
+        {
+          "text": "腹減った",
+          "created": "2017-04-20T13:20:26.091Z",
+          "updated": "2017-04-20T13:20:26.091Z"
+        },
+        {
+          "text": "お腹が空いています",
+          "created": "2017-04-20T08:22:39.744Z",
+          "updated": "2017-04-20T08:22:39.744Z"
+        }
+      ],
+      "description": null
+    },
+    {
       "intent": "improving_system",
       "created": "2017-03-17T12:44:40.492Z",
       "updated": "2017-03-17T12:44:40.492Z",
@@ -923,129 +946,6 @@
           "text": "私のことを知っている？",
           "created": "2017-04-08T07:23:18.360Z",
           "updated": "2017-04-08T07:23:18.360Z"
-        }
-      ],
-      "description": null
-    },
-    {
-      "intent": "phone",
-      "created": "2017-03-17T12:44:40.492Z",
-      "updated": "2017-03-17T12:44:40.492Z",
-      "examples": [
-        {
-          "text": "answer the phone",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "call dad",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "call on the telephone",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "Can you call Eliza?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "dial Home",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "dial num 111",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "do you have a phone",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "Hello could you call a taxi?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "I'd like to call my mom",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "I'd like to make a call",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "I want to text my father",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "I would like to call someone on the phone",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "make a phone call",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "phone box",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "send an sms",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "smartphone",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "start my call",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "Text me",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "text mom",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "text mum i'll be late",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "text someone",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "use the phone",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "What's your phone number",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
         }
       ],
       "description": null
@@ -1826,7 +1726,7 @@
     {
       "intent": "turn_on",
       "created": "2017-03-17T12:44:40.492Z",
-      "updated": "2017-04-10T05:27:43.254Z",
+      "updated": "2017-04-20T13:48:22.946Z",
       "examples": [
         {
           "text": "あかりをつけて",
@@ -1912,6 +1812,16 @@
           "text": "音楽を演奏して",
           "created": "2017-03-28T09:38:02.639Z",
           "updated": "2017-03-28T09:38:02.639Z"
+        },
+        {
+          "text": "ちょっと音楽でも聞きたい",
+          "created": "2017-04-20T13:33:23.034Z",
+          "updated": "2017-04-20T13:33:23.034Z"
+        },
+        {
+          "text": "音楽が聞きたい",
+          "created": "2017-04-20T13:48:22.946Z",
+          "updated": "2017-04-20T13:48:22.946Z"
         }
       ],
       "description": null
@@ -1960,735 +1870,25 @@
       "description": null
     },
     {
-      "intent": "weather",
-      "created": "2017-03-17T12:44:40.492Z",
-      "updated": "2017-03-17T12:44:40.492Z",
+      "intent": "yes",
+      "created": "2017-04-20T08:22:57.074Z",
+      "updated": "2017-04-20T13:19:56.217Z",
       "examples": [
         {
-          "text": "Can we go someplace where it's not raining?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
+          "text": "じゃあそこでいいや",
+          "created": "2017-04-20T13:19:56.217Z",
+          "updated": "2017-04-20T13:19:56.217Z"
         },
         {
-          "text": "can you tell me what's the weather will be in one hour if we keep goint in this direction?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "Can you tell me what the weather looks like?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "Check the weater",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "check the weather",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "check the wether",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "check the wheather",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "check weather",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "Does It raining all day?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "Does the weather get worse",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "do I need a jacket",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "do you know weather today",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "do you think will rain?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "Good weather, ya?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "Harvard is it going to rain",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "hey watson it's not raining",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "Hi, please tell me something about weather",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "hi, what is the temperature in milan",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "How about this rain",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "how cold",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "how cold is it out",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "how cold is it outside",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "how hot",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "how hot is it outside",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "How is the climate?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "How is the typooon",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "how is the weater?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "how long the rain?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "how long till it rains",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "How long until the rain ends?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "how long will it rain",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "how many degrees are outside?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "how's the wether",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "how`s the wheather",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "how warm is it",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "is it a clear day ?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "is it a nice day today?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "is it a sunny day",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "is it dark outside",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "is it going to rain",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "Is it going to rain?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "Is it going to rain all day?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "is it going to rain for the entire day?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "is it going to rain later today",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "is it going to rain today?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "is it going to rain when we arrive?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "is it gonna be raining",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "is it raining",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "Is it rainning now?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "is it rainning right?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "is it sunny out?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "is raining",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "Is raining?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "is raining now",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "is raining today",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "it is a sunny day",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "it is cloudy now",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "It is going to rain",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "it isn't raining anymore",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "it is raining, what can you do ?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "It's a rainy day",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "It's become sunny now",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "It's cold here",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "it's cold today",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "it's getting cold",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "it's hot",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "its is raining",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "it's raining ...",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "its raining now ?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "Its Raining now",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "It's rain today.",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "it's sunny, maybe we don't need the lights",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "it's sunny now",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "I want to know the weather",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "I want to see weather forecasts",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "i want to  weather news.",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "look up the weather",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "look up the weather in tel aviv",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "make it stop raining",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "Oh, it's a sunny day",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "oh, it started to rain",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "oops... it's raining again",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "raining now",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "rain rain go away",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "tell me the weather",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "The sun is out",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "the weather is important to me",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "watson when this rain will over",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "weather is cool.",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "What about weather",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "What about weather?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "what about weather today?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "what abt weather today?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "what is the outside temperature?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "what is the rain?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "What is the temperature outside",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "What is the temperature outside?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "what is the tempreture outside",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "What is the weather going to be like",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "what is the weather like",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "whats the outside air temperature?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "What's the temperature outside?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "Whats the temperature outside?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "what's the weather",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "whats the weather like right now",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "whats the weather outside",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "what's the weather out would be to destination",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "what time will the weather change",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "What us weather in 08854",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "what weather?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "What weather do you like?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "what would be the weather 50 km ahead?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "when all the rain and",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "when rain",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "when rain ends",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "when the rail will end",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "when the rain of end",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "when the rain stops?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "when were you there when rain is starch",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "when will be the rain end ?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "When will it be sunny",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "When will it be sunny?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "when will the rain arrive",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "When will the rain stop",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "when will the sun appear?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "when will the sun begin?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "when will the sun come out",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "when will the sun set?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "when will this rain end",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "when will this rain end?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "when wil the rain end?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "Whn will this rain stop?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "why is it raining ?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "Why is it raining",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "Why is it raining?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "Why is it raining again",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "Why is it raining today?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "why it is raining",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "Why it is raining?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "will it be warm today?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "will it rain much longer?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "will rain end?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "Will rain stop?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "wow .. it is raining in front of my car",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
+          "text": "お願いします",
+          "created": "2017-04-20T08:22:57.074Z",
+          "updated": "2017-04-20T08:22:57.074Z"
         }
       ],
       "description": null
     }
   ],
-  "updated": "2017-04-10T05:27:43.254Z",
+  "updated": "2017-04-21T05:18:08.659Z",
   "entities": [
     {
       "entity": "amenity",
@@ -2903,105 +2103,69 @@
       "entity": "cuisine",
       "values": [
         {
-          "value": "タコス",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-04-08T09:32:38.151Z",
+          "value": "フレンチ",
+          "created": "2017-04-19T09:17:10.866Z",
+          "updated": "2017-04-19T09:17:37.917Z",
           "metadata": null,
           "synonyms": [
-            "タコス",
-            "burrito",
-            "burritos",
-            "Mexican",
-            "taco",
-            "tacos"
+            "フレンチ",
+            "フランス料理",
+            "洋食"
           ]
         },
         {
-          "value": "パスタ",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-04-08T09:32:20.746Z",
+          "value": "イタリアン",
+          "created": "2017-04-19T09:14:30.758Z",
+          "updated": "2017-04-19T09:14:30.758Z",
           "metadata": null,
           "synonyms": [
+            "ピザ",
             "パスタ",
+            "イタリアン",
             "スパゲッティ",
-            "calzone",
-            "canneloni",
-            "fettucine",
-            "Italian",
-            "pasta",
-            "pizza",
-            "pizzas",
-            "ravioli",
-            "spaghetti"
-          ]
-        },
-        {
-          "value": "シーフード",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-04-08T09:32:30.466Z",
-          "metadata": null,
-          "synonyms": [
-            "シーフード",
-            "fish",
-            "prawns",
-            "seafood",
-            "shrimp"
+            "スパゲッティー",
+            "イタリア料理"
           ]
         },
         {
           "value": "ハンバーガー",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-04-08T09:32:09.709Z",
+          "created": "2017-04-19T09:14:40.058Z",
+          "updated": "2017-04-20T13:56:18.090Z",
           "metadata": null,
           "synonyms": [
-            "ハンバーガー",
-            "burger",
-            "burgers",
-            "cheeseburger",
-            "cheese burger",
-            "cheeseburgers",
-            "cheese burgers",
-            "hamburger",
-            "ham burger",
-            "hamburgers",
-            "ham burgers",
-            "mcdonalds",
-            "mcdonald's"
+            "マック",
+            "ハンバーガ",
+            "マクドナルド",
+            "チーズバーガー"
           ]
         },
         {
-          "value": "中華",
-          "created": "2017-04-08T09:33:01.905Z",
-          "updated": "2017-04-08T09:33:01.905Z",
+          "value": "中華料理",
+          "created": "2017-04-19T09:16:10.118Z",
+          "updated": "2017-04-19T09:16:10.118Z",
           "metadata": null,
           "synonyms": [
             "ラーメン",
+            "チャーハン",
             "中華",
             "中華料理"
           ]
         },
         {
           "value": "和食",
-          "created": "2017-04-08T09:33:24.057Z",
-          "updated": "2017-04-08T09:33:24.057Z",
+          "created": "2017-04-19T09:16:18.524Z",
+          "updated": "2017-04-19T09:16:39.612Z",
           "metadata": null,
           "synonyms": [
             "和食",
+            "天ぷら",
+            "寿司",
             "居酒屋"
-          ]
-        },
-        {
-          "value": "洋食",
-          "created": "2017-04-08T09:34:28.669Z",
-          "updated": "2017-04-08T09:34:28.669Z",
-          "metadata": null,
-          "synonyms": [
-            "洋食"
           ]
         }
       ],
-      "created": "2017-03-17T12:44:40.492Z",
-      "updated": "2017-04-08T09:34:28.669Z",
+      "created": "2017-04-19T09:12:50.506Z",
+      "updated": "2017-04-20T13:56:18.090Z",
       "metadata": null,
       "description": null
     },
@@ -3496,6 +2660,13 @@
           ]
         },
         {
+          "value": "ドライブ",
+          "created": "2017-04-21T05:06:25.512Z",
+          "updated": "2017-04-21T05:06:25.512Z",
+          "metadata": null,
+          "synonyms": []
+        },
+        {
           "value": "ポップス",
           "created": "2017-03-17T12:44:40.492Z",
           "updated": "2017-03-31T04:40:27.347Z",
@@ -3544,7 +2715,7 @@
         }
       ],
       "created": "2017-03-17T12:44:40.492Z",
-      "updated": "2017-04-09T04:01:42.855Z",
+      "updated": "2017-04-21T05:06:25.512Z",
       "metadata": null,
       "description": null
     },
@@ -4097,12 +3268,25 @@
       "parent": "node_1_1491699377249",
       "context": null,
       "created": "2017-03-17T12:44:40.492Z",
-      "updated": "2017-04-09T01:15:04.646Z",
+      "updated": "2017-04-20T13:08:55.523Z",
       "metadata": null,
       "conditions": "true",
       "description": null,
-      "dialog_node": "node_1_1491700504416",
+      "dialog_node": "node_10_1489445960772",
       "previous_sibling": "node_5_1491701338972"
+    },
+    {
+      "go_to": null,
+      "output": {},
+      "parent": "node_13_1467234287024",
+      "context": null,
+      "created": "2017-03-17T12:44:40.492Z",
+      "updated": "2017-04-20T13:06:37.775Z",
+      "metadata": null,
+      "conditions": "@option || @sys-number",
+      "description": null,
+      "dialog_node": "node_1_1491699377249",
+      "previous_sibling": "node_14_1489448869178"
     },
     {
       "go_to": null,
@@ -4205,7 +3389,7 @@
       "parent": "node_7_1467233747449",
       "context": null,
       "created": "2017-03-17T12:44:40.492Z",
-      "updated": "2017-03-17T12:44:40.492Z",
+      "updated": "2017-04-20T12:38:40.314Z",
       "metadata": null,
       "conditions": "true",
       "description": null,
@@ -4343,7 +3527,7 @@
       "output": {
         "text": {
           "values": [
-            "ワトソンのデモにようこそ。何をご希望ですか "
+            "こんにちは、アシスタントのワトソンです。今日は何をしましょうか？"
           ]
         }
       },
@@ -4359,7 +3543,7 @@
         "default_counter": 0
       },
       "created": "2017-03-17T12:44:40.492Z",
-      "updated": "2017-04-09T02:45:44.566Z",
+      "updated": "2017-04-20T12:58:28.362Z",
       "metadata": null,
       "conditions": "conversation_start",
       "description": null,
@@ -4405,6 +3589,26 @@
       "description": null,
       "dialog_node": "node_8_1468608349230",
       "previous_sibling": "node_7_1468608329601"
+    },
+    {
+      "go_to": null,
+      "output": {
+        "text": {
+          "values": [
+            "レストランを探しますか？"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": null,
+      "context": null,
+      "created": "2017-04-20T08:23:21.549Z",
+      "updated": "2017-04-20T08:23:50.999Z",
+      "metadata": null,
+      "conditions": "#hungry",
+      "description": null,
+      "dialog_node": "node_1_1492676601353",
+      "previous_sibling": "Start And Initialize Context"
     },
     {
       "go_to": null,
@@ -4471,7 +3675,7 @@
       "output": {
         "text": {
           "values": [
-            "もちろん。何料理がいいですか"
+            "何が食べたいですか？"
           ]
         },
         "action": {
@@ -4483,7 +3687,7 @@
         "reprompt": true
       },
       "created": "2017-03-17T12:44:40.492Z",
-      "updated": "2017-04-08T09:30:12.359Z",
+      "updated": "2017-04-20T12:41:21.672Z",
       "metadata": null,
       "conditions": "@amenity:restaurant",
       "description": null,
@@ -4495,7 +3699,7 @@
       "output": {
         "text": {
           "values": [
-            "わかりました。この近所に５カ所あります。何番目がいいですか"
+            "この近くに５カ所ありますよ。どこがいいですか？"
           ]
         },
         "action": {
@@ -4507,7 +3711,7 @@
         "reprompt": true
       },
       "created": "2017-03-17T12:44:40.492Z",
-      "updated": "2017-04-09T00:52:39.109Z",
+      "updated": "2017-04-20T13:38:54.010Z",
       "metadata": null,
       "conditions": "@cuisine",
       "description": null,
@@ -4567,7 +3771,7 @@
       "output": {
         "text": {
           "values": [
-            "いつレストランに行きますか？"
+            "ではご案内します。音声に従って安全運転で行きましょう！"
           ],
           "selection_policy": "sequential"
         },
@@ -4578,9 +3782,9 @@
       "parent": "node_1_1491699377249",
       "context": null,
       "created": "2017-03-17T12:44:40.492Z",
-      "updated": "2017-04-09T01:28:59.279Z",
+      "updated": "2017-04-20T13:08:22.614Z",
       "metadata": null,
-      "conditions": "! @sys-time && ! @sys-date",
+      "conditions": "#yes",
       "description": null,
       "dialog_node": "node_5_1491701338972",
       "previous_sibling": null
@@ -4601,6 +3805,28 @@
       "description": null,
       "dialog_node": "node_2_1490935029437",
       "previous_sibling": "node_1_1491640791185"
+    },
+    {
+      "go_to": {
+        "return": null,
+        "selector": "body",
+        "dialog_node": "node_10_1467233806357"
+      },
+      "output": {
+        "text": {
+          "values": [],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1492676601353",
+      "context": null,
+      "created": "2017-04-20T08:23:55.650Z",
+      "updated": "2017-04-20T12:57:00.042Z",
+      "metadata": null,
+      "conditions": "#yes",
+      "description": null,
+      "dialog_node": "node_3_1492676638434",
+      "previous_sibling": null
     },
     {
       "go_to": {
@@ -4961,7 +4187,7 @@
       "conditions": "#turn_on",
       "description": null,
       "dialog_node": "Entry Point For On Off Commands",
-      "previous_sibling": "Start And Initialize Context"
+      "previous_sibling": "node_1_1492676601353"
     },
     {
       "go_to": {
@@ -4984,40 +4210,6 @@
       "go_to": {
         "return": null,
         "selector": "condition",
-        "dialog_node": "node_5_1491701338972"
-      },
-      "output": {},
-      "parent": "node_13_1467234287024",
-      "context": null,
-      "created": "2017-03-17T12:44:40.492Z",
-      "updated": "2017-04-09T01:02:16.350Z",
-      "metadata": null,
-      "conditions": "@option || @sys-number",
-      "description": null,
-      "dialog_node": "node_1_1491699377249",
-      "previous_sibling": "node_14_1489448869178"
-    },
-    {
-      "go_to": {
-        "return": null,
-        "selector": "condition",
-        "dialog_node": "node_5_1491701338972"
-      },
-      "output": {},
-      "parent": "node_5_1491701338972",
-      "context": null,
-      "created": "2017-03-17T12:44:40.492Z",
-      "updated": "2017-03-17T12:44:40.492Z",
-      "metadata": null,
-      "conditions": "true",
-      "description": null,
-      "dialog_node": "node_10_1489445960772",
-      "previous_sibling": null
-    },
-    {
-      "go_to": {
-        "return": null,
-        "selector": "condition",
         "dialog_node": "node_8_1467233758272"
       },
       "output": {},
@@ -5030,23 +4222,6 @@
       "description": null,
       "dialog_node": "node_7_1467233747449",
       "previous_sibling": "node_6_1467233590477"
-    },
-    {
-      "go_to": {
-        "return": null,
-        "selector": "condition",
-        "dialog_node": "node_9_1467233775768"
-      },
-      "output": {},
-      "parent": "node_10_1467233806357",
-      "context": null,
-      "created": "2017-03-17T12:44:40.492Z",
-      "updated": "2017-03-17T12:44:40.492Z",
-      "metadata": null,
-      "conditions": "true",
-      "description": null,
-      "dialog_node": "node_4_1469812033731",
-      "previous_sibling": "node_14_1467234311677"
     },
     {
       "go_to": {
@@ -5088,6 +4263,30 @@
       "description": null,
       "dialog_node": "node_8_1467233758272",
       "previous_sibling": null
+    },
+    {
+      "go_to": {
+        "return": null,
+        "selector": "condition",
+        "dialog_node": "node_9_1467233775768"
+      },
+      "output": {
+        "text": {
+          "values": [
+            "残念ながら、この近くにその料理のお店はないようですね。和食、中華、イタリアンならあるようです。どうしますか？"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_10_1467233806357",
+      "context": null,
+      "created": "2017-03-17T12:44:40.492Z",
+      "updated": "2017-04-20T12:47:21.203Z",
+      "metadata": null,
+      "conditions": "true",
+      "description": null,
+      "dialog_node": "node_1_1492692369401",
+      "previous_sibling": "node_14_1467234311677"
     },
     {
       "go_to": {
@@ -5201,7 +4400,7 @@
       "output": {
         "text": {
           "values": [
-            "I see a few restaurants nearby which you can select from, serving tacos, burgers, seafood and pasta. Which cuisine would you like?"
+            "残念ながら、この近くにその料理のお店はないですね。和食、中華、イタリアンならあるようです。どうしますか？"
           ]
         }
       },
@@ -5210,7 +4409,7 @@
         "reprompt": false
       },
       "created": "2017-03-17T12:44:40.492Z",
-      "updated": "2017-03-17T12:44:40.492Z",
+      "updated": "2017-04-20T13:00:24.249Z",
       "metadata": null,
       "conditions": "$reprompt",
       "description": null,
@@ -5291,6 +4490,30 @@
       "description": null,
       "dialog_node": "node_2_1467994543354",
       "previous_sibling": "node_11_1468364542917"
+    },
+    {
+      "go_to": {
+        "return": null,
+        "selector": "user_input",
+        "dialog_node": "node_3_1492676638434"
+      },
+      "output": {
+        "text": {
+          "values": [
+            "「はい」か「いいえ」で教えてね"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1492676601353",
+      "context": null,
+      "created": "2017-04-20T13:10:46.564Z",
+      "updated": "2017-04-20T13:11:56.184Z",
+      "metadata": null,
+      "conditions": "true",
+      "description": null,
+      "dialog_node": "node_5_1492693846354",
+      "previous_sibling": "node_3_1492676638434"
     },
     {
       "type": "response_condition",
@@ -5412,7 +4635,7 @@
       "output": {
         "text": {
           "values": [
-            "わかりました。どの音楽を流しますか？ジャズ、ロック、ポップス、クラシック、演歌を流せます"
+            "いいですね！どんな音楽がいいですか？ジャズ？ロック？ポップス？クラシック？演歌もあります"
           ]
         }
       },
@@ -5421,7 +4644,7 @@
         "reprompt": true
       },
       "created": "2017-04-08T08:39:51.955Z",
-      "updated": "2017-04-08T09:06:45.148Z",
+      "updated": "2017-04-20T13:37:00.541Z",
       "metadata": null,
       "conditions": null,
       "description": null,
@@ -5812,90 +5035,6 @@
       "output": {
         "text": {
           "values": [
-            "わかりました。 <? @sys-date.reformatDateTime('MMM月d日(EEE)') ?>の<? @sys-time.reformatDateTime('h時mm分') ?>にレストランに行きましょう。"
-          ],
-          "selection_policy": "sequential"
-        }
-      },
-      "parent": "node_1_1491700504416",
-      "context": null,
-      "created": "2017-03-17T12:44:40.492Z",
-      "updated": "2017-04-08T10:11:10.398Z",
-      "metadata": null,
-      "conditions": "@sys-date && @sys-time",
-      "description": null,
-      "dialog_node": "node_27_1488772023321",
-      "previous_sibling": null
-    },
-    {
-      "type": "response_condition",
-      "go_to": null,
-      "output": {
-        "text": {
-          "values": [
-            "わかりました。 <? @sys-date.reformatDateTime('MMM月d日(EEE)'') ?>にレストランに行きましょう。"
-          ],
-          "selection_policy": "sequential"
-        }
-      },
-      "parent": "node_1_1491700504416",
-      "context": null,
-      "created": "2017-03-17T12:44:40.492Z",
-      "updated": "2017-04-08T10:10:50.923Z",
-      "metadata": null,
-      "conditions": " @sys-date",
-      "description": null,
-      "dialog_node": "node_3_1488775609591",
-      "previous_sibling": "node_27_1488772023321"
-    },
-    {
-      "type": "response_condition",
-      "go_to": null,
-      "output": {
-        "text": {
-          "values": [
-            "わかりました。 @sys-number 番目のレストランは評判がいいみたいです。"
-          ],
-          "selection_policy": "sequential"
-        }
-      },
-      "parent": "node_1_1491699377249",
-      "context": null,
-      "created": "2017-03-17T12:44:40.492Z",
-      "updated": "2017-04-09T01:37:05.428Z",
-      "metadata": null,
-      "conditions": "@sys-number",
-      "description": null,
-      "dialog_node": "node_6_1488752733255",
-      "previous_sibling": "node_5_1488752732864"
-    },
-    {
-      "type": "response_condition",
-      "go_to": null,
-      "output": {
-        "text": {
-          "values": [
-            "わかりました。 <? @sys-time.reformatDateTime(''h時mm分') ?>にレストランに行きましょう。"
-          ],
-          "selection_policy": "sequential"
-        }
-      },
-      "parent": "node_1_1491700504416",
-      "context": null,
-      "created": "2017-03-17T12:44:40.492Z",
-      "updated": "2017-04-08T10:10:46.265Z",
-      "metadata": null,
-      "conditions": " @sys-time",
-      "description": null,
-      "dialog_node": "node_28_1488772086007",
-      "previous_sibling": "node_3_1488775609591"
-    },
-    {
-      "type": "response_condition",
-      "go_to": null,
-      "output": {
-        "text": {
-          "values": [
             "That would be <? @sys-date.reformatDateTime('EEE, d MMM yyyy') ?>."
           ],
           "selection_policy": "sequential"
@@ -5973,6 +5112,27 @@
       "description": null,
       "dialog_node": "node_19_1484715884764",
       "previous_sibling": "node_18_1484715801015"
+    },
+    {
+      "type": "response_condition",
+      "go_to": null,
+      "output": {
+        "text": {
+          "values": [
+            "そのお店は評判いいみたいです。"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1491699377249",
+      "context": null,
+      "created": "2017-03-17T12:44:40.492Z",
+      "updated": "2017-04-20T13:06:19.457Z",
+      "metadata": null,
+      "conditions": "@sys-number",
+      "description": null,
+      "dialog_node": "node_6_1488752733255",
+      "previous_sibling": "node_5_1488752732864"
     },
     {
       "type": "response_condition",
@@ -6728,31 +5888,6 @@
       "output": {
         "text": {
           "values": [
-            "わかりました。 @genre を流します。"
-          ]
-        },
-        "action": {
-          "music_on": "@genre"
-        }
-      },
-      "parent": "Genre On Off Check",
-      "context": {
-        "musiconoff": "on"
-      },
-      "created": "2017-03-17T12:44:40.492Z",
-      "updated": "2017-03-31T04:39:30.332Z",
-      "metadata": null,
-      "conditions": "$appl_action == \"on\"",
-      "description": null,
-      "dialog_node": "node_3_1484628332751",
-      "previous_sibling": "node_2_1484628272507"
-    },
-    {
-      "type": "response_condition",
-      "go_to": null,
-      "output": {
-        "text": {
-          "values": [
             "@genre を消します"
           ]
         },
@@ -6868,7 +6003,55 @@
       "conditions": " @option",
       "description": null,
       "dialog_node": "node_5_1488752732864",
-      "previous_sibling": "node_1_1491700504416"
+      "previous_sibling": "node_10_1489445960772"
+    },
+    {
+      "type": "response_condition",
+      "go_to": null,
+      "output": {
+        "text": {
+          "values": [
+            "了解！それならポップスにしましょう"
+          ]
+        },
+        "action": {
+          "music_on": "ポップス"
+        }
+      },
+      "parent": "Genre On Off Check",
+      "context": null,
+      "created": "2017-04-21T05:04:26.740Z",
+      "updated": "2017-04-21T05:18:08.659Z",
+      "metadata": null,
+      "conditions": "$appl_action == \"on\" && @genre:ドライブ",
+      "description": null,
+      "dialog_node": "node_1_1492751066209",
+      "previous_sibling": "node_2_1484628272507"
+    },
+    {
+      "type": "response_condition",
+      "go_to": null,
+      "output": {
+        "text": {
+          "values": [
+            "了解！ @genre を流します。"
+          ]
+        },
+        "action": {
+          "music_on": "@genre"
+        }
+      },
+      "parent": "Genre On Off Check",
+      "context": {
+        "musiconoff": "on"
+      },
+      "created": "2017-03-17T12:44:40.492Z",
+      "updated": "2017-04-20T13:37:47.085Z",
+      "metadata": null,
+      "conditions": "$appl_action == \"on\"",
+      "description": null,
+      "dialog_node": "node_3_1484628332751",
+      "previous_sibling": "node_1_1492751066209"
     },
     {
       "type": "response_condition",
