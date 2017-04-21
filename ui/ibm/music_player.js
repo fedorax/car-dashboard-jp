@@ -27,3 +27,4 @@ function stop_music(){
     audioObj = new Audio();
 }
 
+// yanagi
