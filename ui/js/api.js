@@ -69,13 +69,8 @@ var Api = (function() {
         Api.setWatsonPayload(response);
       } else {
         Api.setWatsonPayload({output: {text: [
-          'The service may be down at the moment; please check' +
-          ' <a href="https://status.ng.bluemix.net/" target="_blank">here</a>' +
-          ' for the current status. <br> If the service is OK,' +
-          ' the app may not be configured correctly,' +
-          ' please check workspace id and credentials for typos. <br>' +
-          ' If the service is running and the app is configured correctly,' +
-          ' try refreshing the page and/or trying a different request.'
+          'Conversationサービスがダウンしている可能性があります。以下のリンクを確認して下さい。<br>' +
+          ' <a href="https://status.ng.bluemix.net/" target="_blank">確認先</a>'
         ]}});
         console.error('Server error when trying to reply!');
       }
