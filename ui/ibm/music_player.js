@@ -12,7 +12,7 @@ function start_music(type){
        url = "audio/Morzart.wav";
     }
     if ( type == "ポップス" ) {
-       url = "audio/Dragon_Night.wav";
+       url = "audio/drive_sound.wav";
     }
     if ( type == "演歌" ) {
        url = "audio/kawanonagare.wav";
