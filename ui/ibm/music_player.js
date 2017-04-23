@@ -6,7 +6,7 @@ function start_music(type){
        url = "audio/Take_Five.wav";
     }
     if ( type == "ロック" ) {
-       url = "audio/Hotel_California.wav";
+       url = "audio/Unusual_Habitat.wav";
     }
     if ( type == "クラシック" ) {
        url = "audio/Morzart.wav";
