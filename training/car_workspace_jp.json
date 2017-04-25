@@ -210,13 +210,8 @@
     {
       "intent": "greetings",
       "created": "2017-03-17T12:44:40.492Z",
-      "updated": "2017-04-09T05:11:10.350Z",
+      "updated": "2017-04-25T05:45:57.724Z",
       "examples": [
-        {
-          "text": "はい",
-          "created": "2017-04-09T05:11:10.350Z",
-          "updated": "2017-04-09T05:11:10.350Z"
-        },
         {
           "text": "おおきに",
           "created": "2017-03-28T12:27:56.030Z",
@@ -263,12 +258,22 @@
     {
       "intent": "hungry",
       "created": "2017-04-20T08:22:39.744Z",
-      "updated": "2017-04-20T13:20:33.230Z",
+      "updated": "2017-04-25T05:15:31.712Z",
       "examples": [
+        {
+          "text": "おなかがすいた",
+          "created": "2017-04-25T05:15:13.967Z",
+          "updated": "2017-04-25T05:15:13.967Z"
+        },
         {
           "text": "何か食べたい",
           "created": "2017-04-20T13:20:33.230Z",
           "updated": "2017-04-20T13:20:33.230Z"
+        },
+        {
+          "text": "おなかが空いた",
+          "created": "2017-04-25T05:15:31.712Z",
+          "updated": "2017-04-25T05:15:31.712Z"
         },
         {
           "text": "腹減った",
@@ -279,54 +284,6 @@
           "text": "お腹が空いています",
           "created": "2017-04-20T08:22:39.744Z",
           "updated": "2017-04-20T08:22:39.744Z"
-        }
-      ],
-      "description": null
-    },
-    {
-      "intent": "improving_system",
-      "created": "2017-03-17T12:44:40.492Z",
-      "updated": "2017-03-17T12:44:40.492Z",
-      "examples": [
-        {
-          "text": "can i improve your system",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "Can I teach you",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "can i teach you something new",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "can i training you?",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "can you learn from me",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "can you learn new things",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "Hello! I'm doing good. I'm here to help you. Just say the word. And please do not respond like this \"Hello! I'm doing good. I'm here to help you. Just say the word.\"",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
-        },
-        {
-          "text": "how do i teach you",
-          "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-03-17T12:44:40.492Z"
         }
       ],
       "description": null
@@ -750,6 +707,39 @@
           "text": "You're asking me too much",
           "created": "2017-03-17T12:44:40.492Z",
           "updated": "2017-03-17T12:44:40.492Z"
+        }
+      ],
+      "description": null
+    },
+    {
+      "intent": "no",
+      "created": "2017-04-25T05:18:03.171Z",
+      "updated": "2017-04-25T05:18:24.590Z",
+      "examples": [
+        {
+          "text": "いや",
+          "created": "2017-04-25T05:18:03.171Z",
+          "updated": "2017-04-25T05:18:03.171Z"
+        },
+        {
+          "text": "いいえ",
+          "created": "2017-04-25T05:18:03.171Z",
+          "updated": "2017-04-25T05:18:03.171Z"
+        },
+        {
+          "text": "もういい",
+          "created": "2017-04-25T05:18:03.171Z",
+          "updated": "2017-04-25T05:18:03.171Z"
+        },
+        {
+          "text": "もういいや",
+          "created": "2017-04-25T05:18:03.171Z",
+          "updated": "2017-04-25T05:18:03.171Z"
+        },
+        {
+          "text": "そうじゃなくて",
+          "created": "2017-04-25T05:18:24.590Z",
+          "updated": "2017-04-25T05:18:24.590Z"
         }
       ],
       "description": null
@@ -1726,7 +1716,7 @@
     {
       "intent": "turn_on",
       "created": "2017-03-17T12:44:40.492Z",
-      "updated": "2017-04-20T13:48:22.946Z",
+      "updated": "2017-04-25T05:35:37.170Z",
       "examples": [
         {
           "text": "あかりをつけて",
@@ -1789,6 +1779,11 @@
           "updated": "2017-03-28T09:53:17.997Z"
         },
         {
+          "text": "ちょっと音楽でもきけるかな",
+          "created": "2017-04-25T05:35:37.170Z",
+          "updated": "2017-04-25T05:35:37.170Z"
+        },
+        {
           "text": "音楽をかけて",
           "created": "2017-03-31T05:11:25.999Z",
           "updated": "2017-03-31T05:11:25.999Z"
@@ -1819,9 +1814,19 @@
           "updated": "2017-04-20T13:33:23.034Z"
         },
         {
+          "text": "ちょっと音楽でも聞けるかな",
+          "created": "2017-04-25T05:35:15.342Z",
+          "updated": "2017-04-25T05:35:15.342Z"
+        },
+        {
           "text": "音楽が聞きたい",
           "created": "2017-04-20T13:48:22.946Z",
           "updated": "2017-04-20T13:48:22.946Z"
+        },
+        {
+          "text": "ちょっと音楽でも聴けるかな",
+          "created": "2017-04-25T05:35:26.818Z",
+          "updated": "2017-04-25T05:35:26.818Z"
         }
       ],
       "description": null
@@ -1872,8 +1877,23 @@
     {
       "intent": "yes",
       "created": "2017-04-20T08:22:57.074Z",
-      "updated": "2017-04-20T13:19:56.217Z",
+      "updated": "2017-04-25T05:18:16.937Z",
       "examples": [
+        {
+          "text": "うん",
+          "created": "2017-04-25T05:18:11.233Z",
+          "updated": "2017-04-25T05:18:11.233Z"
+        },
+        {
+          "text": "はい",
+          "created": "2017-04-25T05:15:42.646Z",
+          "updated": "2017-04-25T05:15:42.646Z"
+        },
+        {
+          "text": "それそれ",
+          "created": "2017-04-25T05:18:16.937Z",
+          "updated": "2017-04-25T05:18:16.937Z"
+        },
         {
           "text": "じゃあそこでいいや",
           "created": "2017-04-20T13:19:56.217Z",
@@ -1888,7 +1908,7 @@
       "description": null
     }
   ],
-  "updated": "2017-04-21T05:18:08.659Z",
+  "updated": "2017-04-25T05:54:47.122Z",
   "entities": [
     {
       "entity": "amenity",
@@ -2995,24 +3015,11 @@
         {
           "value": "一番目",
           "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-04-08T09:59:59.666Z",
+          "updated": "2017-04-25T05:54:29.389Z",
           "metadata": null,
           "synonyms": [
-            "1st",
-            "any",
-            "best",
-            "closeby",
-            "close by",
-            "closest",
-            "finest",
-            " first",
-            "hgihest rated",
-            "near",
-            "nearby",
-            "nearest",
-            "recommended",
-            "top rated",
-            "whatever",
+            "いちばん",
+            "いちばんめ",
             "一番目",
             "最初"
           ]
@@ -3020,29 +3027,23 @@
         {
           "value": "三番目",
           "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-04-08T10:00:22.001Z",
+          "updated": "2017-04-25T05:54:38.534Z",
           "metadata": null,
           "synonyms": [
-            "3rd",
-            "average",
-            "cheap",
-            "cheapest",
-            "middle",
-            " third",
+            "さんばん",
+            "さんばんめ",
             "三番目"
           ]
         },
         {
           "value": "二番目",
           "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-04-08T10:00:15.783Z",
+          "updated": "2017-04-25T05:54:47.122Z",
           "metadata": null,
           "synonyms": [
+            "にばん",
+            "にばんめ",
             "ふたつめ",
-            "2nd",
-            " second",
-            "second best",
-            "second rated",
             "二",
             "二番目"
           ]
@@ -3050,35 +3051,29 @@
         {
           "value": "五番目",
           "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-04-08T09:59:50.168Z",
+          "updated": "2017-04-25T05:54:13.995Z",
           "metadata": null,
           "synonyms": [
-            "5th",
-            "farthest",
-            "fifth",
-            "last",
-            "lowest rated",
-            "worst",
+            "ごばん",
+            "ごばんめ",
             "五番目"
           ]
         },
         {
           "value": "四番目",
           "created": "2017-03-17T12:44:40.492Z",
-          "updated": "2017-04-08T10:00:09.679Z",
+          "updated": "2017-04-25T05:54:08.862Z",
           "metadata": null,
           "synonyms": [
-            "4th",
-            "fourth",
-            "penultimate",
-            "second to last",
+            "よんばん",
+            "よんばんめ",
             "四",
             "四番目"
           ]
         }
       ],
       "created": "2017-03-17T12:44:40.492Z",
-      "updated": "2017-04-08T10:00:22.001Z",
+      "updated": "2017-04-25T05:54:47.122Z",
       "metadata": null,
       "description": null
     },
@@ -3589,6 +3584,26 @@
       "description": null,
       "dialog_node": "node_8_1468608349230",
       "previous_sibling": "node_7_1468608329601"
+    },
+    {
+      "go_to": null,
+      "output": {
+        "text": {
+          "values": [
+            "それでは何をしましょうか？"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1492676601353",
+      "context": null,
+      "created": "2017-04-25T05:22:01.779Z",
+      "updated": "2017-04-25T05:22:32.732Z",
+      "metadata": null,
+      "conditions": "#no",
+      "description": null,
+      "dialog_node": "node_1_1493097721559",
+      "previous_sibling": "node_3_1492676638434"
     },
     {
       "go_to": null,
@@ -4333,31 +4348,6 @@
       "output": {
         "text": {
           "values": [
-            "I found 5 locations. Which option would you like? You can say first, third, nearest and so on."
-          ]
-        }
-      },
-      "parent": "node_13_1467234287024",
-      "context": {
-        "reprompt": false
-      },
-      "created": "2017-03-17T12:44:40.492Z",
-      "updated": "2017-03-17T12:44:40.492Z",
-      "metadata": null,
-      "conditions": "$reprompt",
-      "description": null,
-      "dialog_node": "node_16_1467234390805",
-      "previous_sibling": "node_1_1491699377249"
-    },
-    {
-      "go_to": {
-        "return": null,
-        "selector": "user_input",
-        "dialog_node": "node_1_1491699377249"
-      },
-      "output": {
-        "text": {
-          "values": [
             "I love tacos. I'm sure you'll love them too! Which restaurant do you want to drive to?"
           ]
         }
@@ -4371,6 +4361,31 @@
       "description": null,
       "dialog_node": "node_7_1469824258064",
       "previous_sibling": "node_9_1468364300050"
+    },
+    {
+      "go_to": {
+        "return": null,
+        "selector": "user_input",
+        "dialog_node": "node_1_1491699377249"
+      },
+      "output": {
+        "text": {
+          "values": [
+            "この近くに5ヶ所あります。1 、2、3、4または5で教えていただけますか？"
+          ]
+        }
+      },
+      "parent": "node_13_1467234287024",
+      "context": {
+        "reprompt": false
+      },
+      "created": "2017-03-17T12:44:40.492Z",
+      "updated": "2017-04-25T05:32:39.225Z",
+      "metadata": null,
+      "conditions": "$reprompt",
+      "description": null,
+      "dialog_node": "node_16_1467234390805",
+      "previous_sibling": "node_1_1491699377249"
     },
     {
       "go_to": {
@@ -4513,7 +4528,7 @@
       "conditions": "true",
       "description": null,
       "dialog_node": "node_5_1492693846354",
-      "previous_sibling": "node_3_1492676638434"
+      "previous_sibling": "node_1_1493097721559"
     },
     {
       "type": "response_condition",
