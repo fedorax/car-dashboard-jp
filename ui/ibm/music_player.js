@@ -12,7 +12,7 @@ function start_music(type){
        url = "audio/m_classic.wav";
     }
     if ( type == "ポップス" ) {
-       url = "audio/drive_sound.wav";
+       url = "audio/m_drive_sound.wav";
     }
     if ( type == "演歌" ) {
        url = "audio/m_enka.wav";
