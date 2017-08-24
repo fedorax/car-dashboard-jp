@@ -10,7 +10,6 @@ declared-services:
     label: text_to_speech
     plan: standard
 applications:
-- name: car-dashboard
-  command: npm start
+- command: npm start
   path: .
-  memory: 512M
+  memory: 256M

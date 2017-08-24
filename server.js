@@ -15,10 +15,17 @@
  * limitations under the License.
  */
 
-require('dotenv').config({silent: true});
+// 構成情報の取得
+const fs = require('fs');
+if (fs.existsSync('local.env')) {
+  console.log('構成情報をlocal.envから取得します');
+  require('dotenv').config({ path: 'local.env' });
+} else {
+  console.log('環境変数から構成情報を取得します');
+}
 
 var server = require('./app');
-var port = process.env.PORT || process.env.VCAP_APP_PORT || 3000;
+var port = process.env.VCAP_APP_PORT || 3000;
 
 server.listen(port, function() {
   // eslint-disable-next-line
