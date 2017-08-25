@@ -64,13 +64,20 @@ TEXT_TO_SPEECH_PASSWORD
 SPEECH_TO_TEXT_USERNAME
 SPEECH_TO_TEXT_PASSWORD
 ```
-    CONVERSATION\_USERNAMEとCONVERSATION\_PASSWORDは、Conversationサービス管理画面から「資格情報」「資格情報の表示」を選択  
+  
+CONVERSATION\_USERNAMEとCONVERSATION\_PASSWORDは、Conversationサービス管理画面から「資格情報」「資格情報の表示」を選択  
 
 ![userid](readme_images/conv-userid.png)  
   
   
 TEXT\_TO\_SPEECH\_USERNAME、TEXT\_TO\_SPEECH\_PASSWORD、
-SPEECH\_TO\_TEXT\_USERNAME、SPEECH\_TO\_TEXT\_PASSWORDも同様のやり方で調べます。      WORDSPACE\_IDは、Conversaionサービス管理画面から「Launch Tool」ワークスペースごとの詳細メニューから「View Deatails」を選択して確認します。    ![workspace](readme_images/conv-workspaceid.png)        ## ローカル環境へのデプロイ### プログラムの導入次のコマンドを実行して必要なモジュールを導入します。```cd car-dashboard-jpnpm install
+SPEECH\_TO\_TEXT\_USERNAME、SPEECH\_TO\_TEXT\_PASSWORDも同様のやり方で調べます。  
+  
+  
+WORDSPACE\_IDは、Conversaionサービス管理画面から「Launch Tool」ワークスペースごとの詳細メニューから「View Deatails」を選択して確認します。  
+  
+![workspace](readme_images/conv-workspaceid.png)
+  ## ローカル環境へのデプロイ### プログラムの導入次のコマンドを実行して必要なモジュールを導入します。```cd car-dashboard-jpnpm install
 npm run build```### 環境変数の設定カレントディレクトリにあるlocal.env.sampleをlocal.envにコピーします。    ```cp local.env.sample local.env```  local.envをテキストエディタで開いて、下記の項目にそれぞれの値を設定して下さい。  ```          WORKSPACE_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxCONVERSATION_USERNAME=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxCONVERSATION_PASSWORD=xxxxxxxxxxxx
 SPEECH_TO_TEXT_PASSWORD=xxxxxxxxxxxxSPEECH_TO_TEXT_USERNAME=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 TEXT_TO_SPEECH_USERNAME=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
