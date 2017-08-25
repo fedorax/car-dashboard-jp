@@ -35,7 +35,12 @@ Bluemixダッシュボードから「カタログ」「Watson」「Conversation�
 ![userid](readme_images/crt-conv2.png)  
  
 Speech to Text、Text to Speechに関しても同様のことを繰り返します。 ### ソースのダウンロードカレントディレクトリのサブディレクトリにソースはダウンロードされるので、あらかじめ適当なサブディレクトリを作り、そこにcdしておきます。
-```git clone https://git.ng.bluemix.net/akaishi/car-dashboard-jp.git```### サンプルワークスペースの作成ダッシュボードの画面から先ほど作成したConversationサービスを選択し、次の画面を表示します。
+
+```
+git clone https://git.ng.bluemix.net/akaishi/car-dashboard-jp.git
+```
+
+### サンプルワークスペースの作成ダッシュボードの画面から先ほど作成したConversationサービスを選択し、次の画面を表示します。
 
 ![userid](readme_images/crt-workspace.png)   
 下にある「Import Workspace」のアイコンをクリックします。  
