@@ -10,7 +10,14 @@ Watson APIのうち、Conversation, Speech to Text, Text to Speechを使って�
 ### 音楽の演奏 (「音楽を演奏して」など)  
 曲のジャンル: ロック、クラシック、ジャズ、ポップス、演歌
 ### レストランの案内 (「おなかがすいた」など)
-レストランの種類: 和食、中華、イタリアン      ## 事前準備### Bluemixアカウントの準備   [Bluemixアカウントを作る][sign_up] か、あるいは既存のBluemixアカウントを利用します。 ### 前提ソフトの導入 次の前提ソフトを導入します。Node.jsはローカルで動かす場合に必要となります。      [gitコマンドラインツール][git]     [Cloud Foundryコマンドラインツール][cloud_foundry]    [Node.js][node_js]   注意: Cloud Foundaryのバージョンは最新として下さい。### サービスの作成
+レストランの種類: 和食、中華、イタリアン  
+
+## 事前準備
+
+### Bluemixアカウントの準備   [Bluemixアカウントを作る][sign_up] か、あるいは既存のBluemixアカウントを利用します。
+
+### 前提ソフトの導入
+次の前提ソフトを導入します。Node.jsはローカルで動かす場合に必要となります。      [gitコマンドラインツール][git]     [Cloud Foundryコマンドラインツール][cloud_foundry]    [Node.js][node_js]   注意: Cloud Foundaryのバージョンは最新として下さい。### サービスの作成
 デモで利用する、Conversation, Speech to Text, Text to Speechの3つのWatsonサービスを作成します。  
 Conversationサービスの作成手順は以下の通りです。  
 
