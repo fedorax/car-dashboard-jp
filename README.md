@@ -31,9 +31,9 @@ Bluemixダッシュボードから「カタログ」「Watson」「Conversation�
 ![userid](readme_images/crt-conv.png)  
  　   
 下記の画面が表示されたら、すべてデフォルト値のまま「作成」を選択  
-　　
+  
 ![userid](readme_images/crt-conv2.png)  
- 
+  
 Speech to Text、Text to Speechに関しても同様のことを繰り返します。 ### ソースのダウンロードカレントディレクトリのサブディレクトリにソースはダウンロードされるので、あらかじめ適当なサブディレクトリを作り、そこにcdしておきます。
 
 ```
