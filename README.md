@@ -44,14 +44,15 @@ git clone https://git.ng.bluemix.net/akaishi/car-dashboard-jp.git
 ダッシュボードの画面から先ほど作成したConversationサービスを選択し、次の画面を表示します。  
   
 ![userid](readme_images/crt-workspace.png)  
-   
-下にある「Import Workspace」のアイコンをクリックします。  
-　
-![userid](readme_images/crt-workspace2.png) 
-下の画面が表示されたら、まず「Choose a file」で先ほどダウンロードしたソース配下の training/car-dachboard-jp.jsonを選択し、「Import」ボタンをクリックします。  
-
-![userid](readme_images/crt-workspace3.png)  　
-　### 環境変数の確認デモを動かすのに必要な以下の環境変数の値を調べ、テキストエディタなどにコピーします。  
+  下にある「Import Workspace」のアイコンをクリックします。  
+  
+![userid](readme_images/crt-workspace2.png)  
+  
+下の画面が表示されたら、まず「Choose a file」で先ほどダウンロードしたソース配下の training/car-dachboard-jp.jsonを選択し、「Import」ボタンをクリックします。  
+  
+![userid](readme_images/crt-workspace3.png)  
+  
+  　### 環境変数の確認デモを動かすのに必要な以下の環境変数の値を調べ、テキストエディタなどにコピーします。  
 (ローカル環境で動作確認をしない場合は、WORKSPACE_ID以外の確認は不要です)```  WORKSPACE_ID
 CONVERSATION_USERNAME
 CONVERSATION_PASSWORD
