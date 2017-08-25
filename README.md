@@ -103,7 +103,8 @@ npm run build
 ```
 cp local.env.sample local.env
 ```
-    local.envをテキストエディタで開いて、下記の項目にそれぞれの値を設定して下さい。
+
+local.envをテキストエディタで開いて、下記の項目にそれぞれの値を設定して下さい。
 
 ```
 WORKSPACE_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
