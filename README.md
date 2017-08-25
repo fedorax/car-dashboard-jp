@@ -1,4 +1,8 @@
-# Conversation サンプルアプリケーションデモ画面    ![デモ](readme_images/car-dash-jp.gif)
+# Conversation サンプルアプリケーション
+
+デモ画面  
+  
+![デモ](readme_images/car-dash-jp.gif)  
   
 このアプリケーションはWaston Developers Cloud上で公開されている[サンプルアプリ car dashboard][car-dashboad]をベースに音楽演奏機能を追加したものです。  
 Watson APIのうち、Conversation, Speech to Text, Text to Speechを使っており、この3つのAPIの機能を知るのにいいサンプルとなっています。  
@@ -14,7 +18,8 @@ Watson APIのうち、Conversation, Speech to Text, Text to Speechを使って�
 
 ## 事前準備
 
-### Bluemixアカウントの準備   [Bluemixアカウントを作る][sign_up] か、あるいは既存のBluemixアカウントを利用します。
+### Bluemixアカウントの準備
+[Bluemixアカウントを作る][sign_up] か、あるいは既存のBluemixアカウントを利用します。
 
 ### 前提ソフトの導入
 次の前提ソフトを導入します。Node.jsはローカルで動かす場合に必要となります。      [gitコマンドラインツール][git]     [Cloud Foundryコマンドラインツール][cloud_foundry]    [Node.js][node_js]   注意: Cloud Foundaryのバージョンは最新として下さい。### サービスの作成
@@ -29,7 +34,8 @@ Bluemixダッシュボードから「カタログ」「Watson」「Conversation�
 　　
 ![userid](readme_images/crt-conv2.png)  
  
-Speech to Text、Text to Speechに関しても同様のことを繰り返します。 ### ソースのダウンロードカレントディレクトリのサブディレクトリにソースはダウンロードされるので、あらかじめ適当なサブディレクトリを作り、そこにcdしておきます。```git clone https://git.ng.bluemix.net/akaishi/car-dashboard-jp.git```### サンプルワークスペースの作成ダッシュボードの画面から先ほど作成したConversationサービスを選択し、次の画面を表示します。
+Speech to Text、Text to Speechに関しても同様のことを繰り返します。 ### ソースのダウンロードカレントディレクトリのサブディレクトリにソースはダウンロードされるので、あらかじめ適当なサブディレクトリを作り、そこにcdしておきます。
+```git clone https://git.ng.bluemix.net/akaishi/car-dashboard-jp.git```### サンプルワークスペースの作成ダッシュボードの画面から先ほど作成したConversationサービスを選択し、次の画面を表示します。
 
 ![userid](readme_images/crt-workspace.png)   
 下にある「Import Workspace」のアイコンをクリックします。  
