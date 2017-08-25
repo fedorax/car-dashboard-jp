@@ -29,7 +29,9 @@ Watson APIのうち、Conversation, Speech to Text, Text to Speechを使って�
  - [Cloud Foundryコマンドラインツール][cloud_foundry]  
  - [Node.js][node_js]  
   
-  注意: Cloud Foundaryのバージョンは最新として下さい。### サービスの作成
+  注意: Cloud Foundaryのバージョンは最新として下さい。
+
+### サービスの作成
 デモで利用する、Conversation, Speech to Text, Text to Speechの3つのWatsonサービスを作成します。  
 Conversationサービスの作成手順は以下の通りです。  
 
