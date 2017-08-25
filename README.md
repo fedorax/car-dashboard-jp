@@ -107,7 +107,7 @@ TEXT_TO_SPEECH_PASSWORD=xxxxxxxxxxxx
 ```
         
 設定が完了したら、次のコマンドでnode.jsを起動します。
-    ```
+```
 npm start
 ```
   
