@@ -36,7 +36,9 @@ Bluemixダッシュボードから「カタログ」「Watson」「Conversation�
   
 ![userid](readme_images/crt-conv2.png)  
   
-Speech to Text、Text to Speechに関しても同様のことを繰り返します。 ### ソースのダウンロードカレントディレクトリのサブディレクトリにソースはダウンロードされるので、あらかじめ適当なサブディレクトリを作り、そこにcdしておきます。
+Speech to Text、Text to Speechに関しても同様のことを繰り返します。 
+
+### ソースのダウンロードカレントディレクトリのサブディレクトリにソースはダウンロードされるので、あらかじめ適当なサブディレクトリを作り、そこにcdしておきます。
 
 ```
 git clone https://git.ng.bluemix.net/akaishi/car-dashboard-jp.git
