@@ -88,8 +88,10 @@ WORDSPACE\_IDは、Conversaionサービス管理画面から「Launch Tool」ワ
 ![workspace](readme_images/conv-workspaceid.png)  
 
 ## ローカル環境へのデプロイ
+### プログラムの導入
 
-### プログラムの導入  次のコマンドを実行して必要なモジュールを導入します。  
+次のコマンドを実行して必要なモジュールを導入します。  
+  
 ```
 cd car-dashboard-jp
 npm install
