@@ -51,17 +51,24 @@ git clone https://git.ng.bluemix.net/akaishi/car-dashboard-jp.git
 下の画面が表示されたら、まず「Choose a file」で先ほどダウンロードしたソース配下の training/car-dachboard-jp.jsonを選択し、「Import」ボタンをクリックします。  
   
 ![userid](readme_images/crt-workspace3.png)  
-  
-  　### 環境変数の確認デモを動かすのに必要な以下の環境変数の値を調べ、テキストエディタなどにコピーします。  
-(ローカル環境で動作確認をしない場合は、WORKSPACE_ID以外の確認は不要です)```  WORKSPACE_ID
+
+### 環境変数の確認
+デモを動かすのに必要な以下の環境変数の値を調べ、テキストエディタなどにコピーします。  
+(ローカル環境で動作確認をしない場合は、WORKSPACE_ID以外の確認は不要です)  
+```
+WORKSPACE_ID
 CONVERSATION_USERNAME
 CONVERSATION_PASSWORD
 TEXT_TO_SPEECH_USERNAME
 TEXT_TO_SPEECH_PASSWORD
 SPEECH_TO_TEXT_USERNAME
 SPEECH_TO_TEXT_PASSWORD
-```    CONVERSATION\_USERNAMEとCONVERSATION\_PASSWORDは、Conversationサービス管理画面から「資格情報」「資格情報の表示」を選択      ![userid](readme_images/conv-userid.png)  
+```
+    CONVERSATION\_USERNAMEとCONVERSATION\_PASSWORDは、Conversationサービス管理画面から「資格情報」「資格情報の表示」を選択  
 
+![userid](readme_images/conv-userid.png)  
+  
+  
 TEXT\_TO\_SPEECH\_USERNAME、TEXT\_TO\_SPEECH\_PASSWORD、
 SPEECH\_TO\_TEXT\_USERNAME、SPEECH\_TO\_TEXT\_PASSWORDも同様のやり方で調べます。      WORDSPACE\_IDは、Conversaionサービス管理画面から「Launch Tool」ワークスペースごとの詳細メニューから「View Deatails」を選択して確認します。    ![workspace](readme_images/conv-workspaceid.png)        ## ローカル環境へのデプロイ### プログラムの導入次のコマンドを実行して必要なモジュールを導入します。```cd car-dashboard-jpnpm install
 npm run build```### 環境変数の設定カレントディレクトリにあるlocal.env.sampleをlocal.envにコピーします。    ```cp local.env.sample local.env```  local.envをテキストエディタで開いて、下記の項目にそれぞれの値を設定して下さい。  ```          WORKSPACE_ID=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxCONVERSATION_USERNAME=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxCONVERSATION_PASSWORD=xxxxxxxxxxxx
