@@ -4,10 +4,12 @@
   
 ![デモ](readme_images/car-dash-jp.gif)  
   
-このアプリケーションはWaston Developers Cloud上で公開されている[サンプルアプリ car dashboard][car-dashboad]をベースに音楽演奏機能を追加したものです。  
+このアプリケーションはWaston Developers Cloud上で公開されている[サンプルアプリ car dashboard][car-dashboad]を日本語対応した上で音楽演奏機能を追加したものです。  
 Watson APIのうち、Conversation, Speech to Text, Text to Speechを使っており、この3つのAPIの機能を知るのにいいサンプルとなっています。  
 音声認識も利用する場合は、ブラウザにFirefoxを使うようにして下さい。  
-  このデモでアプリは、次のような会話が可能です。  
+なお、サンプルの音楽はすべて著作権フリーのものを利用しています。  
+音楽データ差替えの方法は、当READMEの最後に記載しました。  
+このデモでアプリは、次のような会話が可能です。  
  
 ### 機器の操作 (「ライトをつけて」など)
 ライト、ワイパー、クーラー、ヒーターの ON / OFF
@@ -152,6 +154,8 @@ WORKSPACE_IDに関しては、CloudFoundary管理画面から、「ランタイ�
   
 ![call-appl](readme_images/call-appl.png)  
 
+### 音楽データ差替え方法
+(TBD)
   [car-dashboad]: https://github.com/watson-developer-cloud/car-dashboard
 [node_js]: https://nodejs.org/#download
 [cloud_foundry]: https://github.com/cloudfoundry/cli#downloads
