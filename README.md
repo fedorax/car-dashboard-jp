@@ -52,7 +52,7 @@ git clone https://git.ng.bluemix.net/akaishi/car-dashboard-jp.git
 ```
 
 ### サンプルワークスペースの作成
-ダッシュボードの画面から先ほど作成したConversationサービスを選択し、次の画面を表示します。  
+ダッシュボードの画面から先ほど作成したConversationサービスを選択し、次の画面を表示して、「Launch tool」のボタンをクリックします。 
   
 ![userid](readme_images/crt-workspace.png)  
   下にある「Import Workspace」のアイコンをクリックします。  
