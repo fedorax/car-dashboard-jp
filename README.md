@@ -1,7 +1,10 @@
-# Conversation サンプルアプリケーションデモ画面    ![デモ](readme_images/car-dash-jp.gif)このアプリケーションはWaston Developers Cloud上で公開されている[サンプルアプリ car dashboard][car-dashboad]をベースに音楽演奏機能を追加したものです。  
+# Conversation サンプルアプリケーションデモ画面    ![デモ](readme_images/car-dash-jp.gif)
+  
+このアプリケーションはWaston Developers Cloud上で公開されている[サンプルアプリ car dashboard][car-dashboad]をベースに音楽演奏機能を追加したものです。  
 Watson APIのうち、Conversation, Speech to Text, Text to Speechを使っており、この3つのAPIの機能を知るのにいいサンプルとなっています。  
 音声認識も利用する場合は、ブラウザにFirefoxを使うようにして下さい。  
-  このデモでアプリは、次のような会話が可能です。 
+  このデモでアプリは、次のような会話が可能です。  
+ 
 ### 機器の操作 (「ライトをつけて」など)
 ライト、ワイパー、クーラー、ヒーターの ON / OFF
 ### 音楽の演奏 (「音楽を演奏して」など)  
