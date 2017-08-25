@@ -24,10 +24,10 @@ Watson APIのうち、Conversation, Speech to Text, Text to Speechを使って�
 [Bluemixアカウントを作る][sign_up] か、あるいは既存のBluemixアカウントを利用します。
 
 ### 前提ソフトの導入
-次の前提ソフトを導入します。Node.jsはローカルで動かす場合に必要となります。
-  [gitコマンドラインツール][git]  
-  [Cloud Foundryコマンドラインツール][cloud_foundry]  
-  [Node.js][node_js]  
+次の前提ソフトを導入します。Node.jsはローカルで動かす場合に必要となります。  
+ - [gitコマンドラインツール][git]  
+ - [Cloud Foundryコマンドラインツール][cloud_foundry]  
+ - [Node.js][node_js]  
   
   注意: Cloud Foundaryのバージョンは最新として下さい。### サービスの作成
 デモで利用する、Conversation, Speech to Text, Text to Speechの3つのWatsonサービスを作成します。  
