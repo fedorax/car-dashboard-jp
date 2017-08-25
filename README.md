@@ -40,9 +40,11 @@ Speech to Text、Text to Speechに関しても同様のことを繰り返しま�
 git clone https://git.ng.bluemix.net/akaishi/car-dashboard-jp.git
 ```
 
-### サンプルワークスペースの作成ダッシュボードの画面から先ほど作成したConversationサービスを選択し、次の画面を表示します。
-
-![userid](readme_images/crt-workspace.png)   
+### サンプルワークスペースの作成
+ダッシュボードの画面から先ほど作成したConversationサービスを選択し、次の画面を表示します。  
+  
+![userid](readme_images/crt-workspace.png)  
+   
 下にある「Import Workspace」のアイコンをクリックします。  
 　
 ![userid](readme_images/crt-workspace2.png) 
