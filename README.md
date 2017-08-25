@@ -5,7 +5,7 @@
 ![デモ](readme_images/car-dash-jp.gif)  
   
 このアプリケーションはWaston Developers Cloud上で公開されている[サンプルアプリ car dashboard][car-dashboad]を日本語対応した上で音楽演奏機能を追加したものです。  
-Watson APIのうち、Conversation, Speech to Text, Text to Speechを使っており、この3つのAPIの機能を知るのにいいサンプルとなっています。  
+Watson APIのうち、Conversation, Speech to Text, Text to Speechを使っており、この3つのAPIの機能を確認できるアプリケーションとなっています。  
 音声認識も利用する場合は、ブラウザにFirefoxを使うようにして下さい。  
 なお、サンプルの音楽はすべて著作権フリーのものを利用しています。  
 音楽データ差替えの方法は、当READMEの最後に記載しました。  
@@ -43,8 +43,8 @@ Bluemixダッシュボードから「カタログ」「Watson」「Conversation�
   
 Speech to Text、Text to Speechに関しても同様のことを繰り返します。 
 
-### ソースのダウンロードカレントディレクトリのサブディレクトリにソースはダウンロードされるので、あらかじめ適当なサブディレクトリを作り、そこにcdしておきます。
-
+### ソースのダウンロード
+カレントディレクトリのサブディレクトリにソースはダウンロードされるので、あらかじめ適当なサブディレクトリを作り、そこにcdしておきます。
 ```
 git clone https://git.ng.bluemix.net/akaishi/car-dashboard-jp.git
 ```
