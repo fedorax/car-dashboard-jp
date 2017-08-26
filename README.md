@@ -4,7 +4,7 @@
   
 ![デモ](readme_images/car-dash-jp.gif)  
   
-このアプリケーションはWaston Developers Cloud上で公開されている[サンプルアプリ car dashboard][car-dashboad]を日本語対応した上で音楽演奏機能を追加したものです。  
+このアプリケーションはWaston Developers Cloud上で公開されている[サンプルアプリ car dashboard][car-dashboad]を日本語対応(※)した上で音楽演奏機能を追加したものです。  
 Watson APIのうち、Conversation, Speech to Text, Text to Speechを使っており、この3つのAPIの機能を確認できるアプリケーションとなっています。  
 音声認識も利用する場合は、ブラウザにFirefoxを使うようにして下さい。  
 なお、サンプルの音楽はすべて著作権フリーのものを利用しています。  
@@ -17,6 +17,9 @@ Watson APIのうち、Conversation, Speech to Text, Text to Speechを使って�
 曲のジャンル: ロック、クラシック、ジャズ、ポップス、演歌
 ### レストランの案内 (「おなかがすいた」など)
 レストランの種類: 和食、中華、イタリアン  
+
+(※) 日本語化するにあたっては、インテント、インテントの例文、フローなど一部簡略化を行っている点をご理解下さい。   
+
 
 ## 事前準備
 
