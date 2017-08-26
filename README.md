@@ -169,7 +169,34 @@ WORKSPACE_IDに関しては、CloudFoundary管理画面から、「ランタイ�
   
 ![call-appl](readme_images/call-appl.png)  
 
-### 音楽データ差替え方法
+
+## Bluemix環境への自動導入(テスト中)
+1 Bluemix環境に導入するため次のボタンを押して下さい。
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://git.ng.bluemix.net/akaishi/car-dashboard-jp)
+
+2 既存のBluemixアカウントにログインするか、あるいは [Bluemixアカウントを作る][sign_up] を行います。
+
+3 「組織」「Toolcchain名」「地域名」「スペース」を指定し(すべてデフォルトで可)、「デプロイ」ボタンをおします。
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/deploy.PNG)
+
+* このボタンを押すことにより次の処理が自動的に行われます。
+  - CloudFoundaryアプリケーションの作成
+  - Watson APIの１つであるConversationサービスインスタンスの作成
+  - Watson APIサービスの "Speech To Text"と"Text To Speech"の作成
+
+* Your`car-dashboard`app is ready now, click`Delevery Pipeline`to deploy your app.
+
+* Your`car-dashboard`app is ready now, click`Delevery Pipeline`to deploy your app.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/toolchain-ready.png)
+
+5 Once your app has been built and deployed, navagate to your Bluemix Dashboard and [import a workspace](#workspace).
+
+
+
+## 音楽データ差替え方法
 (TBD)
   [car-dashboad]: https://github.com/watson-developer-cloud/car-dashboard
 [node_js]: https://nodejs.org/#download
