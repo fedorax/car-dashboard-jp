@@ -50,7 +50,7 @@ Watson APIのうち、Conversation, Speech to Text, Text to Speechを使って�
 [ワークスペース取込み](#workspace)  
 [ワークスペースID取得](#get_workspace_id)  
 [環境変数設定](#set_env)  
-[アプリケーション起動](#srat_app)  
+[アプリケーション起動](#start_app)  
 
 #Bluemixへの手動導入
 より細かくBluemixの挙動を知りたい場合は、以下の「手動導入」の手順をお勧めします。  
