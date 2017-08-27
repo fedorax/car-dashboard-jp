@@ -54,7 +54,7 @@ Speech to Text、Text to Speechに関しても同様のことを繰り返しま�
 git clone https://git.ng.bluemix.net/akaishi/car-dashboard-jp.git
 ```
 
-### サンプルワークスペースの作成
+### <a name="workspace"></a> サンプルワークスペースの作成
 ダッシュボードの画面から先ほど作成したConversationサービスを選択し、次の画面を表示して、「Launch tool」のボタンをクリックします。 
   
 ![userid](readme_images/crt-workspace.png)  
@@ -190,7 +190,7 @@ WORKSPACE_IDに関しては、CloudFoundary管理画面から、「ランタイ�
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/toolchain-ready.png)
 
-5 アプリケーションのビルドが完了したら、ワークスペースの取込みとWORDSPACE_IDの設定を行います。[手順](### サンプルワークスペースの作成)
+5 アプリケーションのビルドが完了したら、ワークスペースの取込みとWORDSPACE_IDの設定を行います。[手順](###workspace)
 
 
 ## 音楽データ差替え方法
