@@ -170,7 +170,7 @@ WORKSPACE_IDに関しては、CloudFoundary管理画面から、「ランタイ�
 ![call-appl](readme_images/call-appl.png)  
 
 
-## Bluemix環境への自動導入(テスト中)
+## Bluemix環境への自動導入(工事中)
 1 Bluemix環境に導入するため次のボタンを押して下さい。
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://git.ng.bluemix.net/akaishi/car-dashboard-jp)
@@ -186,14 +186,11 @@ WORKSPACE_IDに関しては、CloudFoundary管理画面から、「ランタイ�
   - Watson APIの１つであるConversationサービスインスタンスの作成
   - Watson APIサービスの "Speech To Text"と"Text To Speech"の作成
 
-* Your`car-dashboard`app is ready now, click`Delevery Pipeline`to deploy your app.
-
-* Your`car-dashboard`app is ready now, click`Delevery Pipeline`to deploy your app.
+4 CloudFoundary上のアプリケーション`car-dashboard`が実行可能な状態になっています。アプリケーションのデプロイをするには「デリバリー・パイプライン」のボタンをクリックして下さい。(要修正)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/toolchain-ready.png)
 
-5 Once your app has been built and deployed, navagate to your Bluemix Dashboard and [import a workspace](#workspace).
-
+5 アプリケーションのビルドが完了したら、ワークスペースの取込みとWORDSPACE_IDの設定を行います。[手順](### サンプルワークスペースの作成)
 
 
 ## 音楽データ差替え方法
