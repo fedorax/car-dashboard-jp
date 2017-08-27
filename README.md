@@ -190,7 +190,7 @@ WORKSPACE_IDに関しては、CloudFoundary管理画面から、「ランタイ�
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/toolchain-ready.png)
 
-5 アプリケーションのビルドが完了したら、ワークスペースの取込みとWORDSPACE_IDの設定を行います。[手順](###workspace)
+5 アプリケーションのビルドが完了したら、ワークスペースの取込みとWORDSPACE_IDの設定を行います。[手順](#workspace)
 
 
 ## 音楽データ差替え方法
