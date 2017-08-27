@@ -85,7 +85,7 @@ Bluemixアカウントを使って、 [Bluemixダッシュボード][bluemix_das
 
 ## ワークスペースIDの取得
 
-- ワークスペース一覧画面で、新たに作られた"Car\_Dashboard\_Current"のメニューアイコンをクリックし、更に「Veiw details」のメニューを選ぶと、CONVERSATION\_IDが表示されるので、テキストエディタなどのコピーします。
+- ワークスペース一覧画面で、新たに作られた"Car\_Dashboard\_Current"のメニューアイコンをクリックし、更に「Veiw details」のメニューを選ぶと、WORKSPACE\_IDが表示されるので、テキストエディタなどのコピーします。
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/conv-step6.png)
 
@@ -127,7 +127,7 @@ Bluemixアカウントを使って、 [Bluemixダッシュボード][bluemix_das
   
   注意: Cloud Foundaryのバージョンは最新として下さい。
 
-## サービスの作成
+### サービスの作成
 デモで利用する、Conversation, Speech to Text, Text to Speechの3つのWatsonサービスを作成します。  
 Conversationサービスの作成手順は以下の通りです。  
 
@@ -141,13 +141,13 @@ Bluemixダッシュボードから「カタログ」「Watson」「Conversation�
   
 Speech to Text、Text to Speechに関しても同様のことを繰り返します。 
 
-## ソースのダウンロード
+### ソースのダウンロード
 カレントディレクトリのサブディレクトリにソースはダウンロードされるので、あらかじめ適当なサブディレクトリを作り、そこにcdしておきます。
 ```
 git clone https://git.ng.bluemix.net/akaishi/car-dashboard-jp.git
 ```
 
-## サンプルワークスペースの作成
+### サンプルワークスペースの作成
 ダッシュボードの画面から先ほど作成したConversationサービスを選択し、次の画面を表示して、「Launch tool」のボタンをクリックします。 
   
 ![userid](readme_images/crt-workspace.png)  
@@ -159,7 +159,7 @@ git clone https://git.ng.bluemix.net/akaishi/car-dashboard-jp.git
   
 ![userid](readme_images/crt-workspace3.png)  
 
-## 環境変数の確認
+### 環境変数の確認
 デモを動かすのに必要な以下の環境変数の値を調べ、テキストエディタなどにコピーします。  
 (ローカル環境で動作確認をしない場合は、WORKSPACE_ID以外の確認は不要です)  
 ```
@@ -222,8 +222,8 @@ npm start
   
 正常にNode.jsが起動できていれば、ブラウザから [http://localhost:3000][local_url] のURLでアプリケーションを起動できます。
 
-#Bluemix環境への導入
-##プログラムの配布
+## Bluemix環境への導入
+### プログラムの配布
 cf loginコマンドではemailとpasswordを聞かれるのでbluemix登録時のemailアドレスとパスワードを指定します。  
 cf pushコマンドで指定する \<your\_appl\_name\> はBluemix上のインスタンス名であると同時に、インターネット上のURL名にもなるので、ユニークなものを指定します。  
 
@@ -233,7 +233,7 @@ cf login
 cf push <your_appl_name>
 ```
 
-##サービスのバインド
+### サービスのバインド
 前の手順でローカル環境でNode.jsを動かしている場合、cf pushコマンドでlocal.envファイルのコピーも行われるので、以下の手順は必要ありません。  
 この手順はローカルでのテストを省いてBluemix上で動かす場合、または継続的開発環境の設定をBluemix上で行いGithub上のソースをBluemix環境に直接デプロイする場合に必要となります。  
 Cloud Foundaryアプリのリストの中から先ほど作成したCar Dashboardのアプリケーションを選択し、下の管理画面を表示させます。  
@@ -246,7 +246,7 @@ Cloud Foundaryアプリのリストの中から先ほど作成したCar Dashboar
 ![setting](readme_images/stage.png)  
   
 
-# <a name="set_env"></a> 環境変数のセット
+### 環境変数のセット
 WORKSPACE_IDに関しては、CloudFoundary管理画面から、「ランタイム」「環境変数」を選択して設定します。  
 
 ![setting](readme_images/set-env.png)
@@ -255,7 +255,7 @@ WORKSPACE_IDに関しては、CloudFoundary管理画面から、「ランタイ�
 
 ![setting](readme_images/set-env2.png)  
 
-# <a name="start_app"></a> アプリケーションのURLと起動
+### アプリケーションのURLと起動
 
 環境変数を保存すると自動的に再構成が動き出します。　　
 しばらくしてこれが完了したら、下記の画面で該当するCloud Foundaryアプリケーションの「経路」のリンクをクリックするとアプリケーションが起動されます。　　
