@@ -22,47 +22,104 @@ Watson APIのうち、Conversation, Speech to Text, Text to Speechを使って�
 
 # Bluemix環境への自動導入
 最も簡単にBluemix上にデモ環境を作りたい場合は、「自動導入」をお勧めします。  
-その場合、以下の手順に従って下さい。  
+その場合、以下の手順に従って下さい。 
+
+## 事前準備
+Bluemixアカウントを持っていない場合は [Bluemixアカウントを作る][sign_up] に従い、Bluemixアカウントを作成します。  
+Bluemixアカウントを使って、 [Bluemixダッシュボード][bluemix_dashboard] を表示させて下さい。
+
+## サービス・インスタンスの自動生成
   
-1 次のボタンを押して下さい。
+- 次のボタンを押して下さい。
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://git.ng.bluemix.net/akaishi/car-dashboard-jp)
 
-2 既存のBluemixアカウントにログインするか、あるいは [Bluemixアカウントを作る][sign_up] を行います。
 
-3 「組織」「Toolcchain名」「地域名」「スペース」を指定し(すべてデフォルトで可)、「デプロイ」ボタンをおします。
+- 下の画面が表示されたら「アプリ名」をわかりやすいものに変更し(アプリケーションのURLの一部になります) 、「デプロイ」ボタンをおします。
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/deploy.PNG)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/build-step1.png)
+
 
 * このボタンを押すことにより次の処理が自動的に行われます。
   - CloudFoundaryアプリケーションの作成
   - Watson APIの１つであるConversationサービスインスタンスの作成
-  - Watson APIサービスの "Speech To Text"と"Text To Speech"の作成
+  - Watson APIサービスの "Speech To Text"と"Text To Speech"インスタンスの作成
 
-4 CloudFoundary上のアプリケーション`car-dashboard`が実行可能な状態になっています。  
-アプリケーションのデプロイをするには「デリバリー・パイプライン」のボタンをクリックして下さい。(要修正)
+- 次の画面が表示されたら一番右の「Delivery Pipeline」を選択します。
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/toolchain-ready.png)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/build-step2.png)
 
-5 アプリケーションのビルドが完了したら、「ワークスペースの取込み」と「WORKSPACE\_ID確認」、及び「環境変数の設定」を行います。  
- 3つの手順が完了したらアプリケーション起動が可能です。 
-  
-[ワークスペース取込み](#workspace)  
-[ワークスペースID取得](#get_workspace_id)  
-[環境変数設定](#set_env)  
-[アプリケーション起動](#start_app)  
+- 最初のビルドは、下の画面のように失敗しますが、この段階では気にしないで下さい。
 
-# Bluemixへの手動導入
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/build-step3.png)
+
+## ワークスペースの取込み
+- 左上のメニューから「ダッシュボード」を選択し、Bluemix Dashboardを表示させます。
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/goto_dashboard.png)
+
+- ダッシュボード上のサービス一覧から先ほど自動作成した "my-conversation-service" を選択します。
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/dashboard-service-list.png)
+
+- 画面右上の「Launch tool」をクリック
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/conv-step1.png)
+
+- 下記の画面が出たら「Log In with IBM ID」
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/conv-step2.png)
+
+- 下の画面で赤枠で示された「import worksace」のアイコンをクリック
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/conv-step3.png)
+
+- 下の画面でソースツリー配下の「trainings/car-dashbord-jp.json」を指定し、「import」ボタンをクリック
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/conv-step4.png)
+
+- インポートに成功し、下記の画面が現れたら、下図赤枠で囲まれたアイコンをクリックし、ワークスペース一覧表示の画面に戻ります。
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/conv-step5.png)
+
+## ワークスペースIDの取得
+
+- ワークスペース一覧画面で、新たに作られた"Car\_Dashboard\_Current"のメニューアイコンをクリックし、更に「Veiw details」のメニューを選ぶと、CONVERSATION\_IDが表示されるので、テキストエディタなどのコピーします。
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/conv-step6.png)
+
+## 環境変数の設定
+
+- Bluemixダッシュボードの画面に戻ったら、Cloud Foundaryアプリの一覧の中からcar_dashboardのアプリを選択します。
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/set-env1.png)
+
+- Cloud Foundryアプリ管理画面から「ランタイム」「環境変数」をクリックします。
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/set-env2.png)
+
+- 画面を下にスクロールし「追加」ボタンをクリックします。「名前」にはWORDSPACE\_IDを、「値」には先ほどコピーしたWORDSPACE\_IDの値を入力し、「保存」ボタンをクリックします。
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/set-env3.png)
+
+## アプリケーション起動
+
+- 再びBliemixダッシュボードの画面に戻ります。赤枠で囲まれたリンクがアプリケーションへのリンクなので、こちらをクリックします。
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/car-conv-appl.png)
+
+# Bluemixへの手動導入(以下工事中)
 より細かくBluemixの挙動を知りたい場合は、以下の「手動導入」の手順をお勧めします。  
 「手動導入」には導入先により「ローカルへの導入」と「Bluemixへの導入」があります。  
 「事前準備」はどちらの導入先を選ぶ場合も共通に必要な手順です。  
 
-# 事前準備
+## 事前準備
 
-## Bluemixアカウントの準備
+### Bluemixアカウントの準備
 [Bluemixアカウントを作る][sign_up] か、あるいは既存のBluemixアカウントを利用します。
 
-## 前提ソフトの導入
+### 前提ソフトの導入
 次の前提ソフトを導入します。Node.jsはローカルで動かす場合に必要となります。  
  - [gitコマンドラインツール][git]  
  - [Cloud Foundryコマンドラインツール][cloud_foundry]  
@@ -90,7 +147,7 @@ Speech to Text、Text to Speechに関しても同様のことを繰り返しま�
 git clone https://git.ng.bluemix.net/akaishi/car-dashboard-jp.git
 ```
 
-# <a name="workspace"></a> サンプルワークスペースの作成
+## サンプルワークスペースの作成
 ダッシュボードの画面から先ほど作成したConversationサービスを選択し、次の画面を表示して、「Launch tool」のボタンをクリックします。 
   
 ![userid](readme_images/crt-workspace.png)  
@@ -102,7 +159,7 @@ git clone https://git.ng.bluemix.net/akaishi/car-dashboard-jp.git
   
 ![userid](readme_images/crt-workspace3.png)  
 
-# <a name="get_workspace_id"></a> 環境変数の確認
+## 環境変数の確認
 デモを動かすのに必要な以下の環境変数の値を調べ、テキストエディタなどにコピーします。  
 (ローカル環境で動作確認をしない場合は、WORKSPACE_ID以外の確認は不要です)  
 ```
@@ -127,8 +184,8 @@ TEXT\_TO\_SPEECH\_USERNAME、TEXT\_TO\_SPEECH\_PASSWORD、
 SPEECH\_TO\_TEXT\_USERNAME、SPEECH\_TO\_TEXT\_PASSWORDも同様のやり方で調べます。  
   
   
-#ローカル環境への導入
-##プログラムの導入
+## ローカル環境への導入
+### プログラムの導入
 
 次のコマンドを実行して必要なモジュールを導入します。  
   
@@ -138,7 +195,7 @@ npm install
 npm run build
 ```
 
-##環境変数の設定
+### 環境変数の設定
 
 カレントディレクトリにあるlocal.env.sampleをlocal.envにコピーします。  
   
@@ -215,4 +272,5 @@ WORKSPACE_IDに関しては、CloudFoundary管理画面から、「ランタイ�
 [git]: https://git-scm.com/downloads
 [npm_link]: https://www.npmjs.com/
 [sign_up]: https://bluemix.net/registration
+[bluemix_dashboard]: https://console.bluemix.net/dashboard/
 [local_url]: http://localhost:3000
