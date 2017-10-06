@@ -26,7 +26,16 @@ Watson APIのうち、Conversation, Speech to Text, Text to Speechを使って�
 
 ## 事前準備
 Bluemixアカウントを持っていない場合は [Bluemixアカウントを作る][sign_up] に従い、Bluemixアカウントを作成します。  
-Bluemixアカウントを使って、 [Bluemixダッシュボード][bluemix_dashboard] を表示させて下さい。
+ブラウザ上の別タブからBluemixアカウントを使ってログインして、 [Bluemixダッシュボード][bluemix_dashboard] を表示させて下さい。
+
+## ソースツリーのダウンロード
+
+当README画面の一番右上にあるダウンロードボタンをクリックしてソースツリーのダウンロードを行います。
+
+![](readme_images/download1.png)
+
+ダウンロードしたzipファイルを解凍します。  
+実際の作業で使うのは、「trainings/car-dashbord-jp.json」ファイルのみです。
 
 ## サービス・インスタンスの自動生成
   
@@ -45,12 +54,13 @@ Bluemixアカウントを使って、 [Bluemixダッシュボード][bluemix_das
   - CloudFoundaryアプリケーションの作成
   - Watson APIの１つであるConversationサービスインスタンスの作成
   - Watson APIサービスの "Speech To Text"と"Text To Speech"インスタンスの作成
+  - 3つのWatson APIサービスとCloudFoundaryアプリケーションのバインド
 
 - 次の画面が表示されたら一番右の「Delivery Pipeline」を選択します。
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/build-step2.png)
 
-- 最初のビルドは、下の画面のように失敗しますが、以下の手順で設定するConversation上のワークスペースが設定されていないためなので、この段階では気にしないで下さい。
+- 最初のビルドは、下の画面のように失敗しますが、これは以下の手順で設定するConversation上のワークスペースが設定されていないためなので、この段階では気にしないで下さい。
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/build-step3.png)
 
@@ -75,7 +85,7 @@ Bluemixアカウントを使って、 [Bluemixダッシュボード][bluemix_das
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/conv-step3.png)
 
-- 下の画面でソースツリー配下の「trainings/car-dashbord-jp.json」を指定し、「import」ボタンをクリック
+- 下の画面で事前にダウンロード済みのソースツリー配下「trainings/car-dashbord-jp.json」を指定し、「import」ボタンをクリック
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/conv-step4.png)
 
@@ -109,7 +119,7 @@ Bluemixアカウントを使って、 [Bluemixダッシュボード][bluemix_das
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/car-conv-appl.png)
 
-# Bluemixへの手動導入(以下工事中)
+# Bluemixへの手動導入
 より細かくBluemixの挙動を知りたい場合は、以下の「手動導入」の手順をお勧めします。  
 「手動導入」には導入先により「ローカルへの導入」と「Bluemixへの導入」があります。  
 「事前準備」はどちらの導入先を選ぶ場合も共通に必要な手順です。  
