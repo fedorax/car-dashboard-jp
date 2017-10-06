@@ -266,6 +266,33 @@ WORKSPACE_IDに関しては、CloudFoundary管理画面から、「ランタイ�
 
 ## 音楽データ差替え方法
 
+Bluemixのアプリケーション管理画面から、下図の「ツールチェーンの表示」ボタンをクリックします。
+
+![setting](readme_images/music-mod1.png)
+
+ツールチェーンの画面から「Git」をクリックします。
+
+![setting](readme_images/music-mod2.png)
+
+Gitのソースコードリポジトリ画面が表示されたら、"ui/audio"のサブディレクトリを表示します。
+
+![setting](readme_images/music-mod3.png)
+
+差替えを行いたい音楽ファイルを選択します。図の「Replace」ボタンをクリックして差替え音楽ファイルを指定します。
+
+![setting](readme_images/music-mod4.png)
+
+新しいジャンルの音楽を増やしたい場合は、
+
+1. Conversation編集画面からエンティティ「genre」に該当ジャンルを追加し
+2. GitHub上のソースツリーでは ui/ibm/music-player.jsファイルを編集
+3. GitHubのソースツリー上 ui/audio/配下に該当音楽ファイルを追加
+
+を行います。
+
+![setting](readme_images/music-mod5.png)
+
+![setting](readme_images/music-mod6.png)
 
   [car-dashboad]: https://github.com/watson-developer-cloud/car-dashboard
 [node_js]: https://nodejs.org/#download
