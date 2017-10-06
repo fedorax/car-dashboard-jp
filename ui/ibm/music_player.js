@@ -1,7 +1,8 @@
 var audioObj = new Audio();
 
 function start_music(type){
-    var url = "audio/jazz.wav";
+console.log(type);
+    var url = "audio/m_jazz.wav";
     if ( type == "ジャズ" ) {
        url = "audio/m_jazz.wav";
     }
@@ -12,11 +13,12 @@ function start_music(type){
        url = "audio/m_classic.wav";
     }
     if ( type == "ポップス" ) {
-       url = "audio/m_drive_sound.wav";
+       url = "audio/m_pops.wav";
     }
     if ( type == "演歌" ) {
        url = "audio/m_enka.wav";
     }
+
     audioObj.pause();
     audioObj = new Audio(url);
     audioObj.play();
@@ -27,4 +29,3 @@ function stop_music(){
     audioObj = new Audio();
 }
 
-// yanagi
