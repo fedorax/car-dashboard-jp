@@ -50,7 +50,7 @@ Bluemixアカウントを使って、 [Bluemixダッシュボード][bluemix_das
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/build-step2.png)
 
-- 最初のビルドは、下の画面のように失敗しますが、この段階では気にしないで下さい。
+- 最初のビルドは、下の画面のように失敗しますが、以下の手順で設定するConversation上のワークスペースが設定されていないためなので、この段階では気にしないで下さい。
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/build-step3.png)
 
