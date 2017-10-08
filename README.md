@@ -78,13 +78,10 @@ $ cf create-service-key tts-car-1 myKey
 
 ## ワークスペースの取込み
 以下の手順で先ほど作ったConversationのインスタンスにワークスペースを取込みます。
+
 - 左上のメニューから「ダッシュボード」を選択し、Bluemix Dashboardを表示させます。
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/goto_dashboard.png)
-
-- ダッシュボード上のサービス一覧から先ほど自動作成した "my-conversation-service" を選択します。
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/dashboard-service-list.png)
+- ダッシュボード上のサービス一覧から先ほど自動作成した "conversation-1" を選択します。
 
 - 画面右上の「Launch tool」をクリック
 
