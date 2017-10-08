@@ -95,7 +95,7 @@ $ cf create-service-key tts-car-1 myKey
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/conv-step3.png)
 
-- 下の画面で事前にダウンロード済みのソースツリー配下「trainings/car-dashbord-jp.json」を指定し、「import」ボタンをクリック
+- 下の画面で事前にダウンロード済みのソースツリー配下「trainings/car-workspace-jp.json」を指定し、「import」ボタンをクリック
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/conv-step4.png)
 
