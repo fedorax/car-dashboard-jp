@@ -112,6 +112,10 @@ $ cf create-service-key tts-car-1 myKey
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/conv-step6.png)
 
+## manifest.ymlの修正(オプション)
+
+音声機能を使いたい場合は、manifest.ymlでコメントアウトされている行(全部で8行あります)をすべて有効化します。
+
 ## アプリケーションのデプロイ
 
 次のコマンドを実行します。
@@ -143,27 +147,16 @@ https://<service_name>.mybluemix.net/
 
 ## 音楽データ差替え方法
 
-Bluemixのアプリケーション管理画面から、下図の「ツールチェーンの表示」ボタンをクリックします。
-
-![setting](readme_images/music-mod1.png)
-
-ツールチェーンの画面から「Git」をクリックします。
-
-![setting](readme_images/music-mod2.png)
-
-Gitのソースコードリポジトリ画面が表示されたら、"ui/audio"のサブディレクトリを表示します。
-
-![setting](readme_images/music-mod3.png)
-
-差替えを行いたい音楽ファイルを選択します。図の「Replace」ボタンをクリックして差替え音楽ファイルを指定します。
-
-![setting](readme_images/music-mod4.png)
+音楽データはソースツリーの中で ui/audio配下にあります。
+ファイル名からどのジャンルの音楽かわかりますので、変更したい音楽ファイルを差し替えた上で、"cf push"コマンドを実行すれば差替えが可能です。
+ナレーションとの関係で頭に5秒程度無音とすることが望ましいです。  
 
 新しいジャンルの音楽を増やしたい場合は、
 
 1. Conversation編集画面からエンティティ「genre」に該当ジャンルを追加し
-2. GitHub上のソースツリーでは ui/ibm/music-player.jsファイルを編集
-3. GitHubのソースツリー上 ui/audio/配下に該当音楽ファイルを追加
+2. ソースツリーでは ui/ibm/music-player.jsファイルを編集
+3. ソースツリー上 ui/audio/配下に該当音楽ファイルを追加
+4. "cf push"コマンドでBluemix上にデプロイ
 
 を行います。
 
