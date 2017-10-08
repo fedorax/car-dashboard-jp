@@ -1,15 +1,18 @@
 ---
 declared-services:
-  my-conversation-service:
+  conv-car-1:
     label: conversation
-    plan: free
-  speech-to-text-service:
+    plan: lite
+  stt-car-1:
     label: speech_to_text
     plan: standard
-  text-to-speech-service:
+  tts-car-1:
     label: text_to_speech
     plan: standard
 applications:
-- command: npm start
-  path: .
+- path: .
   memory: 256M
+  services:
+  - conv-car-1
+  - stt-car-1
+  - tts-car-1
