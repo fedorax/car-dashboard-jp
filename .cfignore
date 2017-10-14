@@ -7,3 +7,4 @@ coverage
 npm-debug.log
 readme_images/
 readme_images2/
+local.env

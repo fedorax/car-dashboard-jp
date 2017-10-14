@@ -5,7 +5,8 @@
 ![デモ](readme_images/car-dash-jp.gif)  
   
 このアプリケーションはWaston Developers Cloud上で公開されている[サンプルアプリ car dashboard][car-dashboad]を日本語対応(※)した上で音楽演奏機能を追加したものです。  
-Watson APIのうち、Conversation, Speech to Text, Text to Speechを使っており、この3つのAPIの機能を確認できるアプリケーションとなっています。  
+Watson APIのうち主にConversationの機能を確認するためのアプリケーションとなっています。  
+また、オプションで Speech to Text, Text to Speechを組み合わせて使うことも可能です。  
 音声認識も利用する場合は、ブラウザにFirefoxを使うようにして下さい。  
 なお、サンプルの音楽はすべて著作権フリーのものを利用しています。  
 音楽データ差替えの方法は、当READMEの最後に記載しました。  
@@ -66,16 +67,6 @@ $ cf create-service-key conv-car-1 myKey
 ```
 
 
-## STT/TTSサービスの作成(オプション)
-音声機能も追加したい場合は、以下のコマンドでSTT/TTSサービスも追加します。
-
-```
-$ cf create-service speech_to_text standard stt-car-1
-$ cf create-service-key stt-car-1 myKey
-$ cf create-service text_to_speech standard tts-car-1
-$ cf create-service-key tts-car-1 myKey
-```
-
 ## ワークスペースの取込み
 以下の手順で先ほど作ったConversationのインスタンスにワークスペースを取込みます。
 
@@ -108,10 +99,6 @@ $ cf create-service-key tts-car-1 myKey
 - ワークスペース一覧画面で、新たに作られた"Car\_Dashboard\_Current"のメニューアイコンをクリックし、更に「Veiw details」のメニューを選ぶと、WORKSPACE\_IDが表示されるので、テキストエディタなどのコピーします。
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![](readme_images/conv-step6.png)
-
-## manifest.ymlの修正(オプション)
-
-音声機能を使いたい場合は、manifest.ymlでコメントアウトされている行(全部で8行あります)をすべて有効化します。
 
 ## アプリケーションのデプロイ
 
@@ -161,7 +148,66 @@ https://<service_name>.mybluemix.net/
 
 ![setting](readme_images/music-mod6.png)
 
-  
+
+
+## STT/TTSサービスを利用する場合(オプション)
+
+オプションのSTT/TTSサービスを利用する場合は追加で以下の手順を実行して下さい。
+
+### STT/TTSサービスの作成
+以下のコマンドでSTT/TTSサービスを追加します。
+
+```
+$ cf create-service speech_to_text standard stt-car-1
+$ cf create-service-key stt-car-1 myKey
+$ cf create-service text_to_speech standard tts-car-1
+$ cf create-service-key tts-car-1 myKey
+```
+### manifest.ymlの修正
+
+manifest.ymlでコメントアウトされている行(全部で8行あります)をすべて有効化します。
+
+### CF pushコマンドの実行
+
+以下のコマンドを実行して下さい。
+
+```
+$ cf push <service_name>
+```
+
+
+## ローカルで起動する場合
+
+アプリケーションを修正する時は、ローカルでもテストできる方が便利です。そのための手順は以下の通りです。
+
+* Node.jsの導入  
+ローカルにNode.jsを導入する必要があります。
+[Node.jsダウンロード][node_js]からダウンロードして下さい。
+* 認証情報の確認  
+BluemixダッシュボードからConversationサービスの管理画面を開き、username, passwordの値を調べてテキストエディタなどにコピーします。
+* local.envファイルの設定
+次のコマンドでlocal.envファイルの雛形からlocal.envをコピーし、エディタで調べたusername, passwordを設定します。
+
+```
+$ cp local.env.sample local.env
+```
+
+```
+CONVERSATION_USERNAME=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+CONVERSATION_PASSWORD=xxxxxxxxxxxx
+```
+* Node.jsアプリケーションの導入、実行
+以下のコマンドでアプリケーションの導入、実行を行います。
+
+```
+$ npm install
+$ npm start
+```
+
+### (参考) Bluemixとローカル両方で動くアプリの作り方
+qittaに別記事 [Bluemix上のWatsonアプリをローカル環境で開発・デバッグする際のTips](https://qiita.com/makaishi2/items/06dd45ae50891d66aef5) をあげておきましたので、関心ある方はこちらも参考にされて下さい。
+
+[node_js]: https://nodejs.org/ja/download/
 [car-dashboad]: https://github.com/watson-developer-cloud/car-dashboard
 [node_js]: https://nodejs.org/#download
 [cloud_foundry]: https://github.com/cloudfoundry/cli#downloads
