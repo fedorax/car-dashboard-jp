@@ -73,8 +73,7 @@ var STTModule = (function() {
           outputElement: '#user-input',       // CSS selector or DOM Element
           inactivity_timeout: 5,              // Number of seconds to wait before closing input stream
           format: false,                      // Inhibits errors
-          model: "ja-JP_NarrowbandModel",
-          customization_id: "d309e9e0-1cda-11e7-83ec-b54f4666d1f5",
+          model: "ja-JP_BroadbandModel",
           keepMicrophone: true                // Avoids repeated permissions prompts in FireFox
         });
 
