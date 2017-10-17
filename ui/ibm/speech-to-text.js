@@ -69,9 +69,8 @@ var STTModule = (function() {
       .then(function(token) {                 // Pass token to Watson Speech-To-Text service
         stream = WatsonSpeech.SpeechToText.recognizeMicrophone({
           token: token,                       // Authorization token to use this service, configured from /speech/stt-token.js file
-          continuous: false,                  // False = automatically stop transcription the first time a pause is detected
           outputElement: '#user-input',       // CSS selector or DOM Element
-          inactivity_timeout: 5,              // Number of seconds to wait before closing input stream
+          inactivity_timeout: 3,              // Number of seconds to wait before closing input stream
           format: false,                      // Inhibits errors
           model: "ja-JP_BroadbandModel",
           keepMicrophone: true                // Avoids repeated permissions prompts in FireFox
@@ -79,6 +78,7 @@ var STTModule = (function() {
 
         stream.promise()                                // Once all data has been processed...
           .then(function(data) {                        // ...put all of it into a single array
+            console.log(data);
             mic.setAttribute('class', 'inactive-mic');  // Reset our microphone button to visually indicate we aren't listening to user anymore
             recording = false;                          // We aren't recording anymore
             if (data.length !== 0) {                    // If data is not empty (the user said something)
@@ -91,11 +91,21 @@ var STTModule = (function() {
             }
           })
           .catch(function(err) { // Catch any errors made during the promise
-            if (err !== 'Error: No speech detected for 5s.') { // This error will always occur when Speech-To-Text times out, so don't log it (but log everything else)
-              console.log(err);
+            console.log(err);
+            if (err.message !== 'No speech detected for 3s.' ) {
+              console.log(err.message);
             }
-            mic.setAttribute('class', 'inactive-mic'); // Reset our microphone button to visually indicate we aren't listening to user anymore
-            Api.setWatsonPayload({output: {text: ['音声認識のタイムアウトになりました。マイク開始ボタンをもう一度押して下さい。']}});
+            var elem = document.getElementById('user-input');
+            var sst_text = elem.value;
+            var reg = / /g;
+            var sst_text2 = sst_text.replace( reg , "" ) ;
+            console.log( sst_text2 );
+            mic.setAttribute('class', 'inactive-mic');
+            if ( sst_text2 == '' ) {
+                Api.setWatsonPayload({output: {text: ['音声認識のタイムアウトになりました。マイク開始ボタンをもう一度押して下さい。']}});
+            } else {
+                Conversation.sendMessage();
+            }
           });
       })
       .catch(function(error) { // Catch any other errors and log them
