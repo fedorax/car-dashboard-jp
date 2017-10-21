@@ -44,7 +44,7 @@ var STTModule = (function() {
   function micON() { // When the microphone button is clicked
     if (recording === false) {
       if (records === 0) { // The first time the mic is clicked - inform user
-        Api.setWatsonPayload({output: {text: ['マイク利用を求めるプロンプトに答えて下さい。'], ref: 'STT'}}); // Dialog box output to let the user know we're recording
+        Api.setWatsonPayload({output: {text: ['マイク利用を求めるプロンプトに答えて下さい。'], ref: 'STT'}});
         records++;
       } else {
         Api.setWatsonPayload({output: {ref: 'STT'}}); // Let the user record right away

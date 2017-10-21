@@ -43,7 +43,7 @@ Githubからアプリケーションのソースをダウンロードします�
 
 ```
 $ cd (適当なサブディレクトリ)
-$ git clone https://git.ng.bluemix.net/akaishi/car-dashboard-jp.git
+$ git clone https://github.com/makaishi2/car-dashboard-jp.git
 $ cd car-dashboard-jp
 ```
 
