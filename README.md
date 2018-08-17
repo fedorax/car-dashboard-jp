@@ -113,8 +113,8 @@ $ ibmcloud app push <app_name>
 デブロイが正常に終了したら、次のコマンドで環境変数の設定を行います。
 
 ```
-$ ibmcloud app env-set <service_name> WORKSPACE_ID <workspace_id>
-$ ibmcloud app restage <service_name>
+$ ibmcloud app env-set <app_name> WORKSPACE_ID <workspace_id>
+$ ibmcloud app restage <app_name>
 ```
 
 ## アプリケーションのURLと起動
