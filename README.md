@@ -27,18 +27,18 @@ Watson APIのうち主にConversationの機能を確認するためのアプリ�
 
 [Bluemixアカウントを作る][sign_up] か、あるいは既存のBluemixアカウントを利用します。
 
-## 前提ソフトの導入
-次の前提ソフトを導入します。下記のリンク先からダウンロード後、それぞれ導入して下さい。
-
-[gitコマンドラインツール][git]  
-[Cloud Foundryコマンドラインツール][cloud_foundry]  
-  
-注意: Cloud Foundaryのバージョンは最新として下さい。 
+## ibmcloudコマンドの導入
+導入にはibmcloudコマンドを利用します。  
+ibmcloudコマンドが未導入の場合は、以下のリンク先からダウンロード・導入を行って下さい。  
+[IBM Cloudコマンドラインツール](https://console.bluemix.net/docs/cli/reference/ibmcloud/download_cli.html#install_use)  
+注意: ibmcloudコマンドのバージョンは最新として下さい。 
 
 ## ソースのダウンロード
 Githubからアプリケーションのソースをダウンロードします。  
 カレントディレクトリのサブディレクトリにソースはダウンロードされるので、あらかじめ適当なサブディレクトリを作り、そこにcdしてから下記のコマンドを実行します。  
-ダウンロード後、できたサブディレクトリにcdします。
+GITコマンドを使わない場合は、[Github](https://github.com/makaishi2/car-dashboard-jp) にブラウザからアクセスして、zipファイルをダウンロード後、解凍します。  
+ダウンロード後、できたサブディレクトリにcdします。  
+以下はgitコマンドを使う場合の例です。
  
 
 ```
@@ -47,23 +47,21 @@ $ git clone https://github.com/makaishi2/car-dashboard-jp.git
 $ cd car-dashboard-jp
 ```
 
-## CFコマンドでログイン
-CFコマンドでbluemix環境にログインします。ログイン名、パスワードはBluemixアカウント登録で登録したものを利用します。  
-ログインに成功すると、次のような画面となります。  
+## ibmcloudコマンドでログイン
+IBM Cloud環境にログインします。  
+ログイン名、パスワードはIBM Cloudアカウント登録で登録したものを利用します。  
+ログイン後には、``ibmcloud target --cf``コマンドを実行し、ターゲットの組織とスペースを確定して下さい。
 
 ```
-$ cf api https://api.ng.bluemix.net
-$ cf login
+$ ibmcloud login
+$ ibmcloud target --cf
 ```
-
-![](readme_images/cf-login.png)  
 
 ## Conversationサービスの作成
 以下のコマンドでConversationサービスを作成します。
 
 ```
-$ cf create-service conversation free conv-car-1
-$ cf create-service-key conv-car-1 myKey
+$ ibmcloud service create conversation lite conv-car-1
 ```
 
 
@@ -72,7 +70,7 @@ $ cf create-service-key conv-car-1 myKey
 
 - 左上のメニューから「ダッシュボード」を選択し、Bluemix Dashboardを表示させます。
 
-- ダッシュボード上のサービス一覧から先ほど自動作成した "conversation-1" を選択します。
+- ダッシュボード上のサービス一覧から先ほど作成した "conv-car-1" を選択します。
 
 - 画面右上の「Launch tool」をクリック
 
@@ -103,11 +101,11 @@ $ cf create-service-key conv-car-1 myKey
 ## アプリケーションのデプロイ
 
 次のコマンドを実行します。  
-\<service_name\>はなんでもいいのですが、インターネット上のURLの一部となるので、ユニークな名前を指定します。  
+\<app_name\>はなんでもいいのですが、インターネット上のURLの一部となるので、ユニークな名前を指定します。  
 (例) car-dashboard-aka3
 
 ```
-$ cf push <service_name>
+$ ibmcloud app push <app_name>
 ```
 
 ## 環境変数の設定
@@ -115,8 +113,8 @@ $ cf push <service_name>
 デブロイが正常に終了したら、次のコマンドで環境変数の設定を行います。
 
 ```
-$ cf set-env <service_name> WORKSPACE_ID <workspace_id>
-$ cf restage <service_name>
+$ ibmcloud app env-set <service_name> WORKSPACE_ID <workspace_id>
+$ ibmcloud app restage <service_name>
 ```
 
 ## アプリケーションのURLと起動
@@ -124,7 +122,7 @@ $ cf restage <service_name>
 再構成が完了したらアプリケーションを起動できます。次のURLをブラウザから指定して下さい。  
 
 ```
-https://<service_name>.mybluemix.net/
+https://<app_name>.mybluemix.net/
 ```
 
 
@@ -134,25 +132,15 @@ https://<service_name>.mybluemix.net/
 
 オプションのSTT/TTSサービスを利用する場合は追加で以下の手順を実行して下さい。
 
-### STT/TTSサービスの作成
-以下のコマンドでSTT/TTSサービスを追加します。
+### STT/TTSサービスの作成・バインド・再構成
+以下のコマンドでSTT/TTSサービスを追加・バインド・再構成します。
 
 ```
-$ cf create-service speech_to_text standard stt-car-1
-$ cf create-service-key stt-car-1 myKey
-$ cf create-service text_to_speech standard tts-car-1
-$ cf create-service-key tts-car-1 myKey
-```
-### manifest.ymlの修正
-
-manifest.ymlでコメントアウトされている行(全部で8行あります)をすべて有効化します。
-
-### CF pushコマンドの実行
-
-以下のコマンドを実行して、STT/TTS付きの新しい環境でBluemix上のサービスを再構成します。
-
-```
-$ cf push <service_name>
+$ ibmcloud service create speach_to_text lite stt-car-1
+$ ibmcloud service create text_to_speech lite tts-car-1
+$ ibmcloud service bind <app_name> stt-car-1
+$ ibmcloud service bind <app_name> tts-car-1
+$ ibmcloud app restage <app_name>
 ```
 
 ### ブラウザ上の操作  

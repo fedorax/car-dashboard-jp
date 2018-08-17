@@ -1,8 +1,8 @@
 ---
-declared-services:
-  conv-car-1:
-    label: conversation
-    plan: lite
+#declared-services:
+#  conv-car-1:
+#    label: conversation
+#    plan: lite
 #  stt-car-1:
 #    label: speech_to_text
 #    plan: standard
@@ -12,7 +12,7 @@ declared-services:
 applications:
 - path: .
   memory: 256M
-  services:
-  - conv-car-1
+#  services:
+#  - conv-car-1
 #  - stt-car-1
 #  - tts-car-1
